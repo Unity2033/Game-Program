@@ -29,5 +29,8 @@
     <ClInclude Include="(2022.11.14) 변수와 상수.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="(2022.11.15) 비트와 바이트.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
