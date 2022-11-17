@@ -26,6 +26,7 @@
     <ClInclude Include="(2022.11.11) 자료형 및 출력 함수.h" />
     <ClInclude Include="(2022.11.14) 변수와 상수.h" />
     <ClInclude Include="(2022.11.15) 비트와 바이트.h" />
+    <ClInclude Include="(2022.11.16) 비트 연산자.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
