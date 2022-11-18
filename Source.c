@@ -2,89 +2,84 @@
 
 void main()	
 {
-  	// 오버플로우
+  	// 조건문
+    // 어떤 조건이 주어질 때 해당 조건에 따라
+    // 동작을 수행하도록 실행하는 명령문입니다.
+         
+    // if문
     /*
-    // 컴퓨터의 정수 연산의 계산 결과가 허용 범위를 초과할 때
-    // 발생하는 오류입니다.
+    // if문의 조건이 틀리면 조건문 안에 있는 내용이
+    // 실행되지 않습니다.
 
-    char value = 127;
+    // if문과 else if문의 조건이 모두 다 같다면
+    // if문의 조건만 실행됩니다.
 
-    // 오버플로우의 경우 
-    // 최댓값보다 더 많은 값을 저장하게 되면 계속 최솟값부터 
-    // 최댓값을 넘어간 만큼 다시 계산합니다.
+    if (100 >= 0) // 참
+    {
+        printf("Game Over.");
+    }
+    // else if문은 if문과 else문 사이에 계속 
+    // 선언할 수 있습니다.
+    else if (100 > 50)
+    {
+        printf("Game Pause");
+    }
+    else if (100 == 100) // 참
+    {
+        printf("Game Play");
+    }
+    else 
+    {
+        printf("Game Error");
+    }
 
-    // 실수일 때 오버플로우가 발생하면
-    // infinity라는 값으로 출력합니다.
-
-    value = value + 1;
-    //    1  1  1  1   1  1  1
-    //   [0][1][1][1] [1][1][1][1]
-    // + [0][0][0][0] [0][0][0][1]
-    //  ---------------------------
-    //   [1][0][0][0] [0][0][0][0] = -128 
-               
-    printf("value 값 : %d\n", value);
-   */
-
-    // 언더플로우
-    /*
-    // 컴퓨터의 정수 연산의 계산 결과가 허용 범위보다 작아질 때
-    // 발생하는 오류입니다.
-
-    char data = -128;
-
-    // 실수일 때 언더플로우가 발생하면 0 이라는 값으로 출력합니다.
-
-    data = data - 1;
-     
-    //   [1][0][0][0] [0][0][0][0] = -128   
-    // - [1][1][1][1] [1][1][1][1] = -1
-    // --------------------------
-    //    0  1  1  1   1  1  1  1  = 127
-
-    printf("data의 값 : %d\n", data);
+    // else문 밑에 더 이상 else if의 조건을 설정할 
+    // 수 없습니다.
     */
 
-    // 부호 없는 자료형
+    // else if문
     /*
-    // 부호 없는 자료형도 오버플로우와 언더플로우가 존재합니다.
-    unsigned char variable = -1;
+    // else if와 else로 if문 없이 조건문을 만들 수 없습니다.
+    int signal = 1;
 
-    // unsinged를 사용한다고 해서 자료형의 크기가 커지는 건 아닙니다.
-    printf("variable의 값 : %d", variable);
+    if (signal == signal)
+    {
+
+    }
+
+    if  (signal != signal)
+    {
+
+    }
+
+    if (signal == 1) 
+    {
+        printf("초록불");
+    }
+    else if (signal == 2) 
+    {
+        printf("노란불");
+    }
+    else if (signal == 3) 
+    {
+        printf("빨간불");
+    }
+
+    // if는 독립적인 조건문이기 때문에 
+    // if문과 else if 밑에 if를 사용하게 되면 서로 다른
+    // 조건문으로 인식하게 됩니다.
+
+    if (signal == 1)
+    {
+        printf("하얀불");
+    }
+    else
+    {
+        printf("error");
+    }
+
+    // if을 선언할 때 else if문과 else이 없어도 선언할 수 있습니다.
     */
 
-    // 비교 연산자
-    // 피연산자를 서로 비교하고, 비교 결과가 
-    // 참인지에 따라 논리 값을 반환하는 연산자입니다.
-
-    // x(5) | y(10)
-    // 비교 연산자를 했을 때 결과가 참이면 1을 반환하고,
-    // 거짓이면 0을 반환합니다.
-      
-    // x < y (y가 x보다 크다.)  - (참) -> 1 
-    // x > y (y가 x 보다 작다.) - (거짓) -> 0
-    // x <= y (y가 x보다 크거나 같을 때) - (참) -> 1
-    // x >= y (y가 x보다 작거나 같을 때) - (거짓) -> 0
-    // x == y (x랑 y의 값이 같다.) - (거짓) -> 0
-    // x != y (x랑 y의 값이 다르다.) - (참) -> 1
-
-    int x = 5;
-    int y = 10;
-
-    int result1 = x < y;
-    int result2 = x > y;
-    int result3 = x <= y;
-    int result4 = x >= y;
-    int result5 = x == y;
-    int result6 = x != y;
-
-    printf("result1의 값 : %d\n", result1);
-    printf("result2의 값 : %d\n", result2);
-    printf("result3의 값 : %d\n", result3);
-    printf("result4의 값 : %d\n", result4); 
-    printf("result5의 값 : %d\n", result5);
-    printf("result6의 값 : %d\n", result6);
-
-
+   
 } 
