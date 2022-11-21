@@ -2,84 +2,90 @@
 
 void main()	
 {
-  	// 조건문
-    // 어떤 조건이 주어질 때 해당 조건에 따라
-    // 동작을 수행하도록 실행하는 명령문입니다.
-         
-    // if문
+ 	// 논리 연산자
     /*
-    // if문의 조건이 틀리면 조건문 안에 있는 내용이
-    // 실행되지 않습니다.
+    // 두 개의 논리 값을 연산하여 참 또는 거짓을 결과로
+    // 얻는 연산자입니다.
+    int x = 10;
+    int y = 20;
 
-    // if문과 else if문의 조건이 모두 다 같다면
-    // if문의 조건만 실행됩니다.
-
-    if (100 >= 0) // 참
+    if (x == 10 && y == 20)
     {
-        printf("Game Over.");
-    }
-    // else if문은 if문과 else문 사이에 계속 
-    // 선언할 수 있습니다.
-    else if (100 > 50)
-    {
-        printf("Game Pause");
-    }
-    else if (100 == 100) // 참
-    {
-        printf("Game Play");
-    }
-    else 
-    {
-        printf("Game Error");
+        printf("논리 연산 AND의 조건이 성립합니다.\n");
     }
 
-    // else문 밑에 더 이상 else if의 조건을 설정할 
-    // 수 없습니다.
+    if (x == 10 || y > 30)
+    {
+        printf("논리 연산 OR의 조건이 성립합니다.\n");
+    }
+
+    if (!(x > 10))
+    {
+        printf("논리 연산 NOT의 조건이 성립합니다.\n");
+    }
     */
 
-    // else if문
+    // 프로그래밍 명명 규칙
     /*
-    // else if와 else로 if문 없이 조건문을 만들 수 없습니다.
-    int signal = 1;
+    // 1. 카멜 표기법
+    // 첫번째 문자를 무조건 소문자로 시작하고,
+    // 두 단어 이상 연결될 때에는 단어의 첫 번재 글자는
+    // 대문자로 표기합니다.
 
-    if (signal == signal)
+    // 2. 파스칼 표기법
+    // 모든 단어의 첫번째 문자를 대문자로 시작하며,
+    // 그 이외에 소문자로 표기합니다.
+
+    // 3. 스네이크 표기법
+    // 모든 단어를 소문자로 표기하며, 두 단어 이상이 연결될 
+    // 때 연결되는 부분을 _를 사용하여 표기합니다.
+    */
+
+    // if문 중첩
+    /*
+    char alphabet = 'A';
+
+    if (alphabet == 'A')
     {
-
+        if (alphabet != 'B')
+        {
+            printf("두 번째 조건문이 실행되었습니다.");
+        }
     }
+    */
 
-    if  (signal != signal)
+    // 사분면 
+    /*
+    int x = 1;
+    int y = 1;
+
+    if (x > 0 && y > 0)
     {
-
+        printf("제 1 사분면입니다.");
     }
-
-    if (signal == 1) 
+    else if (x < 0 && y > 0)
     {
-        printf("초록불");
+        printf("제 2 사분면입니다.");
     }
-    else if (signal == 2) 
+    else if (x < 0 && y < 0)
     {
-        printf("노란불");
+        printf("제 3 사분면입니다.");
+    }            
+    else if (x > 0 && y < 0)
+    {
+        printf("제 4 사분면입니다.");
     }
-    else if (signal == 3) 
+    else if (x && y == 0)
     {
-        printf("빨간불");
+        printf("x 절편");
     }
-
-    // if는 독립적인 조건문이기 때문에 
-    // if문과 else if 밑에 if를 사용하게 되면 서로 다른
-    // 조건문으로 인식하게 됩니다.
-
-    if (signal == 1)
+    else if (y && x == 0)
     {
-        printf("하얀불");
+        printf("y 절편");
     }
     else
     {
-        printf("error");
+        printf("원점");
     }
-
-    // if을 선언할 때 else if문과 else이 없어도 선언할 수 있습니다.
     */
-
-   
 } 
