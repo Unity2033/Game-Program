@@ -41,5 +41,8 @@
     <ClInclude Include="(2022.11.18) 조건문.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="(2022.11.21) 논리 연산자.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
