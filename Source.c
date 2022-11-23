@@ -2,37 +2,75 @@
 
 void main()	
 {
-	// 실수를 저장하는 방법
+	// 증감 연산자
+	// 피연산자를 1씩 증가 혹은 감소시킬 때 
+	// 사용하는 연산자입니다.
+
+	// 전위 증감 연산자
 	/*
-	float x = 3.6;	// 4 byte 
-	// float : 소수점 6자리 이하까지만, 정확도를 표시합니다.
+	// 먼저 값을 증가시키거나 감소시킨 후에 
+	// 변수에 값을 넣어주는 연산자입니다.
+	int x = 10;
+	int result = 0;
 
-	double y = 3.6;	// 8 byte
-	// double : 소수점 15자리 이하까지만, 정확도를 표시합니다.
+	// result(11) = (11) <- 10 + 1 
+	result = ++x;
 
-	// 소수점의 자릿수를 설정하려면 (%.원하는 수f)를 해주시면 됩니다. 
-	printf("x 변수의 값 : %.10f\n", x);
-	printf("y 변수의 값 : %.20lf\n", y);
+	printf("result 변수의 값 : %d\n", result);
+
+	// result(10) = (10) <- 11 - 1
+	result = --x;
+
+	printf("result 변수의 값 : %d\n", result);
 	*/
 
-	// switch문
-	// 특정 조건일 때만 실행되는 조건문입니다.
+	// 후위 증감 연산자
+	/*
+	// 값을 먼저 변수에 넣어준 다음, 증가시키거나
+	// 감소시키는 연산자입니다.
+	int x = 10;
+	int result = 0;
+
+	result = x++;
+
+	printf("result 변수의 값 : %d\n", result);
+	printf("x 변수의 값 : %d\n", x);
+
+	result = x--;
 	
-	// switch 문에는 조건식으로 실수형 변수와
-	// 실수형 상수를 사용할 수 없습니다.
+	printf("result 변수의 값 : %d\n", result);
+	printf("x 변수의 값 : %d\n", x);
+	*/
 
-	char character = 'A';
-	int data = 1;
-	float value = 3.6;
+	// 반복문
+	// 프로그램 내에서 특정한 작업을 반복적으로 
+	// 수행하는 명령문입니다.
 
-	switch (character) // <- 조건이 되는 값
+	// for 문이란?
+	/*
+	// 초기식을 연산하여 조건식의 결과에 따라 
+	// 특정한 횟수만큼 반복하는 반복문입니다.
+
+	// for문의 조건식이 처음부터 거짓이면 실행되지 않습니다.
+	
+	int value = 0;
+
+	   // 초기식; 조건식; 증감식;
+	for (int i = value; i < 5; i++)
 	{
-	   case 'A': printf("타이틀");
-		   break;
-	   case 1 : printf("마을");
-		   break;
-	   case 2 : printf("던전");
-		   break;
-	   default: printf("예외 처리");
+		// for문에서 조건식이 계속 참인 상태이면,
+		// for문 안에 있는 내용이 무한 반복합니다.
+		printf("Quest\n");
+	}
+	*/
+
+	for (int i = 1; i <= 5; i++)
+	{
+		printf("%d\n", i);
+	}
+
+	for(int i = 5; i >= 1; i--)
+	{
+		printf("%d\n", i);
 	}
 } 
