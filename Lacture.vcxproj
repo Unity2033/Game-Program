@@ -31,6 +31,7 @@
     <ClInclude Include="(2022.11.18) 조건문.h" />
     <ClInclude Include="(2022.11.21) 논리 연산자.h" />
     <ClInclude Include="(2022.11.22) 부동 소수점 오차.h" />
+    <ClInclude Include="(2022.11.23) 반복문.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
