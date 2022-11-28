@@ -2,71 +2,90 @@
 
 void main()	
 {
-	// 2중 for문
-	/*
-	for (int i = 0; i < 3; i++)
-	{
-		for (int j = 0; j < 3; j++)
-		{
-			printf("내부에 있는 for문\n");
-		}
+	// 모듈러 연산자
+	// 어떠한 숫자를 다른 숫자로 나눈 나머지를
+	// 구하는 연산자입니다.
+	// printf("%d", 11 % 4);
 
-		printf("외부에 있는 for문\n");
+	// 약수
+	/*
+	// 12의 약수를 출력해주세요,
+	// 1,2,3,4,6,12
+	int value = 12;
+
+	for (int i = 1; i <= value; i++)
+	{
+		if (value % i == 0)
+		{
+			printf("%d ", i);
+		}
 	}
 	*/
 
-	// 구구단
+	// while문
 	/*
-	for (int i = 2; i < 10; i++)
-	{
-		for (int j = 1; j < 10; j++)
-		{
-			printf("%d x %d : %d\n", i, j, i * j);
-		}
+	// 특정 조건을 만족할 때까지 계속해서 주어진 
+	// 명령문을 실행하는 반복문입니다.
 
-		printf("\n");
-	}
-	*/
+	int variable = 5;
 
-	// continue문
-	/*
-	// 현재 반복에서 명령문의 실행을 종료하고 반복문의
-	// 처음으로 돌아가서 반복문의 다음 코드를 실행하는 명령문입니다.
-	for (int i = 0; i < 5; i++)
+	while(variable > 0) // <- 조건이 참이기 때문에
 	{
-		if (i == 3)
+		if (variable == 1)
 		{
 			break;
 		}
 
-		printf("i의 값 : %d\n", i);
-	}
-	*/
-
-	// 별 생성 알고리즘
-	/*
-	for (int i = 0; i < 5; i++)
-	{
-		for (int j = 0; j <= i; j++)
+		if (variable == 3)
 		{
-			printf("☆");
+			variable--;
+			continue;
 		}
 
-		printf("\n");
+		// while문은 조건이 계속 참일 때
+		// 무한 반복합니다.
+		printf("variable의 값 : %d\n", variable);
+		variable--;
 	}
 	*/
 
-	// 시프트 연산자
-	// 비트 값을 주어진 숫자만큼 부호 방향으로 이동시키는 연산자입니다.
-	
-	char value = 10; // 0000 1010
-	
-	printf("비트 왼쪽으로 3번 이동한 결과 : %d\n", value << 3); // 0101 0000 
-	
-	printf("비트 오른쪽으로 2번 이동한 결과 : %d\n", value >> 2); // 0000 0010
+	// do-while문
+	/*
+	// 조건과 상관없이 한 번의 작업을 수행한 다음 조건에 
+	// 따라 명령문을 실행하는 반복문입니다.
 
-	// 시프트 연산자에서 대입 연산을 해야 변수에 값이 적용됩니다.
-	printf("value 값 : %d\n", value);
+	int data = 5;
 
+	do
+	{
+		printf("data의 값 : %d\n", data);
+		data--;
+	} 
+	while (data > 5);
+	*/
+	
+	// 복합 대입 연산자
+	/*
+	int value = 10;
+	value += 1;
 
+	printf("value의 값 : %d\n", value);
+
+	value -= 6;
+
+	printf("value의 값 : %d\n", value);
+
+	value *= 2;
+
+	printf("value의 값 : %d\n", value);
+
+	value /= 4;
+
+	// 정수랑 정수를 계산하게 되면 무조건 정수만 출력합니다.
+	printf("value의 값 : %d\n", value);
+
+	value %= 2;
+
+	printf("value의 값 : %d\n", value);
+	*/     
 } 
