@@ -33,6 +33,7 @@
     <ClInclude Include="(2022.11.22) 부동 소수점 오차.h" />
     <ClInclude Include="(2022.11.23) 반복문.h" />
     <ClInclude Include="%282022.11.25%29 continue문.h" />
+    <ClInclude Include="(2022.11.28) 복합 대입 연산자.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

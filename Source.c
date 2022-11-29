@@ -2,90 +2,69 @@
 
 void main()	
 {
-	// 모듈러 연산자
-	// 어떠한 숫자를 다른 숫자로 나눈 나머지를
-	// 구하는 연산자입니다.
-	// printf("%d", 11 % 4);
+	 // 자료형 변환이란?
+	 /*
+	 // 서로 다른 자료형을 가지고 있는 변수끼리
+	 // 연산이 이루어질 때 기존에 지정했던
+	 // 자료형을 다른 자료형으로 변환하는 과정입니다.
 
-	// 약수
-	/*
-	// 12의 약수를 출력해주세요,
-	// 1,2,3,4,6,12
-	int value = 12;
+	 // 암묵적 형 변환
+	 // 서로 다른 자료형으로 연산이 이루어질 때 자료형의
+	 // 크기가 큰 자료형으로 변환되는 과정입니다.
 
-	for (int i = 1; i <= value; i++)
-	{
-		if (value % i == 0)
-		{
-			printf("%d ", i);
-		}
-	}
-	*/
+	 // 대입연산 시 발생하는 형 변환
 
-	// while문
-	/*
-	// 특정 조건을 만족할 때까지 계속해서 주어진 
-	// 명령문을 실행하는 반복문입니다.
+	 // 작은 자료형의 값을 큰 자료형에 넣게 되면
+	 // 큰 자료형으로 암묵적 형 변환됩니다.
+	 int value = 10;
+	 double decimal = value;
 
-	int variable = 5;
+	 // 큰 자료형의 값을 작은 자료형의 메모리에
+	 // 저장하게 되면 작은 자료형의 메모리 형태로 저장되게 됩니다.
+	 double data = 5.96345;
+	 int variable = data;
 
-	while(variable > 0) // <- 조건이 참이기 때문에
-	{
-		if (variable == 1)
-		{
-			break;
-		}
 
-		if (variable == 3)
-		{
-			variable--;
-			continue;
-		}
+	 // 정수의 연산 시 발생하는 형 변환
 
-		// while문은 조건이 계속 참일 때
-		// 무한 반복합니다.
-		printf("variable의 값 : %d\n", variable);
-		variable--;
-	}
-	*/
+	 char x = 10;
+	 short y = 20;
+	 
+	 printf("%d", x + y);
+	 
 
-	// do-while문
-	/*
-	// 조건과 상관없이 한 번의 작업을 수행한 다음 조건에 
-	// 따라 명령문을 실행하는 반복문입니다.
-
-	int data = 5;
-
-	do
-	{
-		printf("data의 값 : %d\n", data);
-		data--;
-	} 
-	while (data > 5);
-	*/
+	 //	수식의 연산 시 발생하는 형 변환
+   
+	 // 작은 자료형과 큰 자료형이 연산을 하게 되면
+	 // 큰 자료형을 기준으로 통일해서 작은 자료형이 형 변환됩니다.	 
+	 double z = 10 + 20.65;
 	
-	// 복합 대입 연산자
-	/*
-	int value = 10;
-	value += 1;
+	 // 명시적 형 변환
+	
+	 //	연산이 이루어지기 전에 사용자 직접 자료형을 변환하는 과정입니다.
 
-	printf("value의 값 : %d\n", value);
+	 int x = 5;
+	 int y = 2;
 
-	value -= 6;
+	 float result = 0.0;
 
-	printf("value의 값 : %d\n", value);
+	 result = (float)x / y;
 
-	value *= 2;
+	 printf("result 변수의 값 : %f", result);
+	 */
+	
+	 // 주소 연산자
+	 // 변수의 주소 값을 반환하는 연산자입니다.
+	 
+	 char A = 'A';
+	 int B = 10;
+	 float C = 99.65;
 
-	printf("value의 값 : %d\n", value);
+	 // %p : 변수의 주소를 출력해주는 서식 지정자입니다.
+	 printf("A의 주소 : %p\n", &A);
+	 printf("B의 주소 : %p\n", &B);
+	 printf("C의 주소 : %p\n", &C);
 
-	value /= 4;
-
-	// 정수랑 정수를 계산하게 되면 무조건 정수만 출력합니다.
-	printf("value의 값 : %d\n", value);
-
-	value %= 2;
-
-	printf("value의 값 : %d\n", value);
-	*/     
+	 // 프로그램이 실행될 때마다 변수의 주솟값은 계속 변경됩니다.
+	 // 
 } 
