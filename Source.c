@@ -2,69 +2,38 @@
 
 void main()	
 {
-	 // 자료형 변환이란?
-	 /*
-	 // 서로 다른 자료형을 가지고 있는 변수끼리
-	 // 연산이 이루어질 때 기존에 지정했던
-	 // 자료형을 다른 자료형으로 변환하는 과정입니다.
-
-	 // 암묵적 형 변환
-	 // 서로 다른 자료형으로 연산이 이루어질 때 자료형의
-	 // 크기가 큰 자료형으로 변환되는 과정입니다.
-
-	 // 대입연산 시 발생하는 형 변환
-
-	 // 작은 자료형의 값을 큰 자료형에 넣게 되면
-	 // 큰 자료형으로 암묵적 형 변환됩니다.
-	 int value = 10;
-	 double decimal = value;
-
-	 // 큰 자료형의 값을 작은 자료형의 메모리에
-	 // 저장하게 되면 작은 자료형의 메모리 형태로 저장되게 됩니다.
-	 double data = 5.96345;
-	 int variable = data;
-
-
-	 // 정수의 연산 시 발생하는 형 변환
-
-	 char x = 10;
-	 short y = 20;
-	 
-	 printf("%d", x + y);
-	 
-
-	 //	수식의 연산 시 발생하는 형 변환
-   
-	 // 작은 자료형과 큰 자료형이 연산을 하게 되면
-	 // 큰 자료형을 기준으로 통일해서 작은 자료형이 형 변환됩니다.	 
-	 double z = 10 + 20.65;
+    // 포인터란 ?
 	
-	 // 명시적 형 변환
-	
-	 //	연산이 이루어지기 전에 사용자 직접 자료형을 변환하는 과정입니다.
+	// 메모리의 주소 값을 저장할 수 있는 변수입니다.
+	int value = 10;
 
-	 int x = 5;
-	 int y = 2;
+	// 포인터 변수를 저장하기 위해 주소 값을 저장할 변수의 자료형과
+	// 포인터 변수의 자료형이 일치해야 합니다.
+	float * point = &value;
 
-	 float result = 0.0;
+	* point = 100;
 
-	 result = (float)x / y;
+	// 메모리 변경 전의 값
+	printf("value의 메모리 주소 : %p\n", &value);
+	printf("point가 가지고 있는 메모리 주소 : %p\n", point);
+	printf("point의 메모리 주소 : %p\n", &point);
 
-	 printf("result 변수의 값 : %f", result);
-	 */
-	
-	 // 주소 연산자
-	 // 변수의 주소 값을 반환하는 연산자입니다.
-	 
-	 char A = 'A';
-	 int B = 10;
-	 float C = 99.65;
+	printf("value의 값 : %d\n", value);
+	printf("point 변수 가라키는 메모리의 값 : %d\n", *point);
 
-	 // %p : 변수의 주소를 출력해주는 서식 지정자입니다.
-	 printf("A의 주소 : %p\n", &A);
-	 printf("B의 주소 : %p\n", &B);
-	 printf("C의 주소 : %p\n", &C);
+	// 메모리 변경 후의 값
 
-	 // 프로그램이 실행될 때마다 변수의 주솟값은 계속 변경됩니다.
-	 // 
+	int data = 20;
+
+	point = &data;
+	*point = 80;
+
+	printf("data의 메모리 주소 : %p\n", &data);
+	printf("point가 가지고 있는 메모리 주소 : %p\n", point);
+	printf("point의 메모리 주소 : %p\n", &point);
+
+	printf("data의 값 : %d\n", data);
+	printf("point 변수 가라키는 메모리의 값 : %d\n", *point);
+
+
 } 
