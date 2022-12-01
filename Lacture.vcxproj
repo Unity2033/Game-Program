@@ -35,6 +35,7 @@
     <ClInclude Include="%282022.11.25%29 continue문.h" />
     <ClInclude Include="(2022.11.28) 복합 대입 연산자.h" />
     <ClInclude Include="%282022.11.29%29 주소 연산자.h" />
+    <ClInclude Include="(2022.11.30) 포인터.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

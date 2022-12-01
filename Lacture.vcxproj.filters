@@ -59,5 +59,8 @@
     <ClInclude Include="%282022.11.29%29 주소 연산자.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="(2022.11.30) 포인터.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
