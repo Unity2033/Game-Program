@@ -62,5 +62,8 @@
     <ClInclude Include="(2022.11.30) 포인터.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="(2022.12.1) 배열.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
