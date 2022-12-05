@@ -1,83 +1,53 @@
 ﻿#include <stdio.h>
 
-void main()	
+// 반환형 함수의 이름 ( ) 
+void Function()
 {
-	// 문자열
-	// 연속적인 메모리 공간에 저장된 문자 변수의 집합입니다.
+	printf("안녕하세요.\n");
+	printf("안녕하세요.\n");
+	printf("안녕하세요.\n");
+	printf("안녕하세요.\n");
+	printf("안녕하세요.\n");
+}
+
+// 함수의 경우 자료형과 반환하는 값의 형태가 일치하지 않으면
+// 원하는 값을 없을 수 없으며. 같은 이름의 함수를 중복으로선언할 수 없습니다.
+int Damage()
+{
+	// 함수의 반환값은 하나만 반환됩니다.
+	return 60.5;
+}
+
+// 매개 변수란?
+// 함수의 정의에서 전달받은 인수를 함수 내부로 전달하기 위해 사용하는 변수입니다.
+int Calculator(int x, int y)
+{
+	// 매개 변수의 갯수는 계속 생성할 수 있습니다.
+	int result = x + y;
 	
-	// 배열의 크기를 생략하고 데이터를 넣게 되면 컴파일러가 자동
-	// 으로 배열의 크기를 계산합니다.
+	// 매개 변수는 함수 내부에서만 연산이 이루어지며,
+	// 함수가 종료되면 메모리에서 사라지며, 여러 개의 매개 변수를 생성할 수 있습니다.
+	return result;
+}
+
+
+int main()	
+{
+	// 함수란?
+	// 하나의 특별한 목적의 작업을 수행하기
+	// 위해 독립적으로 설계된 코드의 집합입니다.
 	
-	// string [A] [B] [C] [D] [E] [\0]
-	char string [ ] = "ABCDE";
+	// 함수가 성공적으로 실행되었을 때 0을 반환하고 종료합니다.
+	// 함수가 실패했을 때 1을 반환하고 종료합니다.
 
-	char * charPoint = "ABCDE";
+	Function();
+	Function();
 
-	// 문자열의 경우 포인터를 이용하여 문자열 상수를 가리키도록 
-	// 할 수 있으며, 문자열 상수는 데이터 영역의 읽기 전용 
-	// 공간에 저장되기 때문에 문자열의 값을 변경할 수 없습니다.
+	printf("Damage 함수가 반환한 결과 값 : %d\n", Damage());
 
-	// charPoint[3] = 'G';
+	//​ 인수란 ?
+    // 함수가 호출될 때 매개변수에 실제로 전달되는 값입니다.
+	printf("Calculator 함수가 반환한 결과 값 : %d\n", Calculator(10, 20));
 
-	charPoint = "BBDDEEGG";
-	charPoint[0] = 'A';
-    // 문자열 생성할 때는 NULL문자가 포함됩니다.
-	// NULL문자의 크기는 1 Byte입니다.
-	//printf("string 배열의 크기 : %d\n", sizeof(string));
-
-	// 문자열은 공백도 함께 메모리 공간에 포함하여 크기가 결정되며
-	// , 마지막에 문자열의 끝을 알려주는 제어 문자가 추가됩니다.
-
-	//char * charPtr = string;
-
-	//printf("charPtr의 크기 : %d", sizeof(charPtr));
-
-	//charPtr[1] = 'Z';
-	//charPtr[3] = 'T';
-
-	//* charPtr = 'O';
-	//string[3] = '\0';
-
-	//charPtr = &string[4];
-	//* charPtr = 'M';
-
-	// %s : 문자열을 한번에 출력하는 서식 지정자입니다.
-	//printf("%s\n", string);
-
-	// 문자열의 경우 서로 연속적인 메모리 공간으로 연결되어 있지만,
-	// 문자 배열 사이에 무효의 문자를 넣게 되면 무효의 문자까지만
-	// 문자열을 출력합니다. 
-	//for (int i = 0; i < 5; i++)
-	//{
-		//printf("%c ", string[i]);
-	//}
-
-	// sizeof 연산자
-	/*
-	// 자료형의 크기를 반환하는 연산자입니다.
-	printf("char 데이터의 크기 : %d\n", sizeof(char));
-	printf("short 데이터의 크기 : %d\n", sizeof(short));
-
-	int value = 10;
-	long data = 10;
-
-	// sizeof 연산자는 데이터를 Byte 단위로 표시합니다.
-	printf("int 데이터의 크기 : %d\n", sizeof(value));
-	printf("long 데이터의 크기 : %d\n", sizeof(data));
-
-    
-	// 접미사를 선언해서 리터럴 상수의 자료형 크기를 명시적
-	// 선언합니다.
-	printf("float 데이터의 크기 : %d\n", sizeof(3.14f));
-
-	// 접미사
-	// 실수를 선언할 때 
-	// 3.14f (float)
-	// 3.65 (double)
-
-	printf("double 데이터의 크기 : %d\n", sizeof(3.65));
-	*/
-
-
-
+	return 0;
 } 
