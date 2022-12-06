@@ -38,6 +38,7 @@
     <ClInclude Include="(2022.11.30) 포인터.h" />
     <ClInclude Include="(2022.12.1) 배열.h" />
     <ClInclude Include="(2022.12.2) 문자열.h" />
+    <ClInclude Include="(2022.12.5) 함수.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

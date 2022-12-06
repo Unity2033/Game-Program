@@ -68,5 +68,8 @@
     <ClInclude Include="(2022.12.2) 문자열.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="(2022.12.5) 함수.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
