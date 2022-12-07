@@ -39,6 +39,7 @@
     <ClInclude Include="(2022.12.1) 배열.h" />
     <ClInclude Include="(2022.12.2) 문자열.h" />
     <ClInclude Include="(2022.12.5) 함수.h" />
+    <ClInclude Include="(2022.12.6) 변수의 범위.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
