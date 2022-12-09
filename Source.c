@@ -1,63 +1,54 @@
 ﻿#include <stdio.h>
 
-// 재귀 함수
-/*
-void Function(int x)
-{
-	if (x == 0)
-	{
-		return;
-	}
-
-	// 재귀 함수는 함수를 계속 호출하기 때문에 스택 영역에
-	// 메모리가 계속 쌓이게 되므로 스택 오버플로우가 일어납니다.
-	printf("함수 실행\n");
-	Function(x - 1);
-
-	// 재귀 함수의 경우 특정한 시점에서 함수를 반환해야 하며, 
-	// 재귀적으로 호출한 함수는 스택 프레임에 의해 마지막에 호출된 
-	// 함수부터 차례대로 스택 영역에서 해제됩니다.
-}
-*/
-
-int Factorial(int x)
-{
-	if (x == 1)
-	{
-		return 1;
-	}
-	else
-	{
-		return x * Factorial(x - 1);
-	}
-}
-
 int main()	
 {
-	// 재귀 함수
+	// 상수 지시 포인터
 	/*
-	// 어떤 함수에서 자신을 다시 호출하여 작업을 
-	// 수행하는 함수입니다.
-	int count = 5;
+	// 포인터가 가리키는 값을 상수화하는 포인터입니다.
 
-	Function(count);
-	*/
-		
-	// 삼항 연산자
-	/*
-	int value1 = 10;
-	int value2 = 20;
+	int value = 100;
+	int variable = 200;
 
-	//           조건          참일 때 거짓일 때
-	printf("%d", value1 != value2 ? 1 : 0);
+	const int * pointer = &value;
+
+	pointer = &variable;
+
+	// *pointer = 1000;	// 포인터 변수가 가리키는 메모리의 값을 수정할 수 없습니다.
+	value = 200; // 해당 변수는 상수화가 되지 않습니다.
+	variable = 300;
 	*/
 
-	// 팩토리얼
+	// 포인터 상수 (배열의 이름)
+	/*
+	int data = 10;
+	int signal = 20;
+	int * const address = &data;
+
+	// 포인터 상수는 새로운 주소를 저장할 수 없습니다.
+	// address = &signal;
+	*address = 300;
+	*/
+
+	// 홀수 & 짝수 
+
 	int value = 0;
 
 	scanf_s("%d", &value);
-				 
-	printf("%d",Factorial(value));
+
+	if (value % 2 == 0)
+	{
+		printf("짝수");
+	}
+	else
+	{
+		printf("홀수");
+	}
+
+	// 1
+	// 홀수
+
+	// 10
+	// 짝수
 
 	return 0;
 } 
