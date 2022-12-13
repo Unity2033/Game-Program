@@ -1,78 +1,97 @@
 ﻿#include <stdio.h>
 
-// 오버 헤드란?
-// 프로그램의 실행 흐름에서 나타나는 현상으로 프로그램의 실행 흐름 도중에
-// 떨어져있는 위치의 코드를 실행시켜야 할 때 추가적인 시간또는 메모리 공간을
-// 사용하는 현상입니다.
+// 함수 포인터
 /*
-inline void Function(int x, int y)
+void Calculator()
 {
-	printf("x의 값 : %d\n", x);
-	printf("y의 값 : %d\n", y);
-	printf("함수 호출");
+	printf("Calculator Call\n");
+}
+
+void Function(int x)
+{
+	x = 100;
+	printf("Function Call %d\n", x);
+}
+
+int Process(int x, int y)
+{
+	return x + y;
 }
 */
 
+// 구조체
+struct Character
+{
+	char * name;
+	int attack;
+	float health;
+};
+
+void ObjectOutput(struct Character character)
+{
+	printf("character의 이름 : %s\n", character.name);
+	printf("character의 공격력 : %d\n", character.attack);
+	printf("character의 체력 : %f\n", character.health);
+}
+
 int main()	
 {
-	// 인라인 함수란?
+	// 함수 포인터란?		  
 	/*
-	// 함수를 호출하는 대신 함수가 호출되는 위치마다 함수의 코드를 
-	// 복사하여 전달하는 방식의 함수입니다.
+	// 함수의 주솟값을 저장하고 가리킬 수 있는 변수입니다.
 
-	Function(10, 20);
+	// 함수의 이름은 함수의 주소를 나타냅니다.
+	// printf("Calculator의 주소 : %p", Calculator);
 
-	// 인라인 함수는 함수를 호출 과정이 없으므로 처리 속도가 빠르지만,
-	// 인라인 함수를 많이 사용하게 되면 함수의 코드가 복사되기 때문에 
-	// 실행 파일의 크기가 커지게 됩니다.
+	// 반환형 (* 포인터 이름) (매개변수 목록)
+	// void     (*ptr)          ( )	 
+
+	// 함수 포인터 선언
+	void (*ptr) ();
+	int (*ptr1) (int, int);
+
+	ptr = Calculator;
+	ptr1 = Process;
+
+	ptr();
+
+	ptr = Function;
+
+	ptr(10);
+
+	printf("함수 포인터가 출력하는 값 : %d\n", ptr1(10, 20));
+
+	// 함수 포인터는 함수의 반환형과 매개변수의 타입이 일치해야 하며,
+	// 함수 포인터를 사용하여 동적으로 메모리를 할당할 수 없습니다.
+
+	void (*arrayPtr[2]) ();
+	arrayPtr[0] = Calculator;
+	arrayPtr[1] = Function;
+
+	// 함수를 호출하는 방법은 호출할 함수가 컴파일 시에 결정되어야 합니다.
+	// 그렇기 때문에 실행 시간에 동적으로 변경할 수 없습니다.
+	arrayPtr[0]();
+	arrayPtr[1](10);
 	*/
 
-	// 1부터 n까지의 합
-	/*
-	int n = 0;
-	int result = 0;
+	// 구조체란?
+	// 여러 개의 변수를 하나의 집합으로 구조화한 다음  
+	// 하나의 객체를 생성하는 것입니다.
 
-	scanf_s("%d", &n);
+	struct Character champion1;
 
-	for (int i = 1; i <= n; i++)
-	{
-		result += i;
-	}
+	// 구조체 변수를 초기화할 때 초기화 목록을 사용할 경우
+	// 가장 첫 번째 멤버 변수부터 자료형에 맞추어 데이터를 저장해야 합니다.
+	struct Character champion2 = { "Alistar", 200.0f ,5};
 
-	printf("result의 값 : %d", result);
-	*/
+	champion1.name = "Leesin";
+	champion1.attack = 10;
+	champion1.health = 100.0f;
 
-	// 아스키 코드
-	/*
-	// 미국정보교환표준부호로 영문 알파벳을 사용하는 대표적인
-	// 문자 인코딩입니다.
+	ObjectOutput(champion1);
+	ObjectOutput(champion2);
 
-	// a ~ z 
-	char alphabet = 97;
 
-	// printf("alphabet의 값 : %d\n", alphabet);
-	// printf("alphabet의 값 : %c\n", alphabet);
-
-	for (int i = 0; i < 26; i++)
-	{
-		printf("%c ", alphabet + i);
-	}
-	*/
-
-	// 포인터 연산
-	int data[5] = { 1,2,3,4,5 };
-
-	int * ptr = data;
-
-	printf("ptr이 가라키는 값 : %d\n", *ptr);
-
-	ptr = ptr + 2;
-
-	printf("ptr을 증가시킨 후 가리키는 값 : %d\n", *ptr);
-
-	ptr = ptr - 1;
-
-	printf("ptr을 감소시킨 후 가리키는 값 : %d\n", *ptr);
 
 	return 0;
 } 
