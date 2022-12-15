@@ -39,6 +39,7 @@
     <ClInclude Include="(2022.12.1) 배열.h" />
     <ClInclude Include="(2022.12.12) 인라인 함수.h" />
     <ClInclude Include="(2022.12.13) 구조체.h" />
+    <ClInclude Include="(2022.12.14) 바이트 패딩.h" />
     <ClInclude Include="(2022.12.2) 문자열.h" />
     <ClInclude Include="(2022.12.5) 함수.h" />
     <ClInclude Include="(2022.12.6) 변수의 범위.h" />
@@ -52,6 +53,7 @@
     <ProjectGuid>{c1a5974f-78d1-4d45-895a-1be4ca2fe2e5}</ProjectGuid>
     <RootNamespace>Lacture</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Lecture</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

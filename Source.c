@@ -1,51 +1,35 @@
 ﻿#include <stdio.h>
-
-// 바이트 패딩
-/*
-// 멤버 변수를 메모리에서 CPU로 읽을 때 한 번에 읽을 수 있도록
-// 컴파일러가 레스지스터의 블록에 맞추어서 바이트를 패딩해주는 최적화 작업입니다.
-
-// 레지스터란?
-// 프로세서에 위치한 고속 메모리로 극히 소량의 데이터나 처리 중인 중간 결과와도 같은 
-// 프로세서가 바로 사용할 수 있는 데이터를 담고 있는 영역
-
-struct Champion
-{
-	// 구조체의 크기는 구조체를 구성하는 멤버 변수 중에서 가장 큰 멤버 변수의 자료형에
-	// 배수가 되도록 정렬합니다.
-
-	char grade;	// 1 byte
-	double position; // 8 byte
-	int health;	// 4 byte
-};
-*/
-
- // 자기 참조 구조체
-struct Node
-{
-	int data; // 4 byte
-	struct Node * next; // 8 byte
-};
+#include <stdlib.h> // 동적으로 할당할 수 있는 malloc 함수 라이브러리
 
 int main()	
 {
-	// 바이트 패딩
-    /*
-	struct Champion champion;
+	// 시작 프로그램으로 설정된 프로젝트의 이름은
+	// 시작 프로그램으로 설정되지 않은 프로젝트의
+	// 이름보다 조금 더 굵은 글씨로 표시됩니다.
+	printf("Lecture 프로젝트의 파일\n");
 
-	printf("Champion의 크기 : %d", sizeof(champion));
-	*/
+	// 동적 할당이란?
+	// 프로그램을 실행 중에 필요한 만큼 메모리를
+	// 할당하는 작업입니다.
+	char * pointer = malloc(sizeof(char));
 
-	// 자기 참조 구조체
-	struct Node node1 = {10, NULL};
-	struct Node node2 = {20, NULL};
-	struct Node node3 = {30, NULL};
+	// char     
+	// [] -----> [] / [][][] / [][][][] 
+		
+	//동적 할당은 실행 시간에 가변적으로 메모리의 크기를 변경시킬 수 있으며,
+	// 동적으로 메모리의 크기를 할당할 때 바이트 단위로 지정합니다.
+	//*pointer = NULL;
 
-	node1.next = &node2;
-	node2.next = &node3;
+	*pointer = 10;
+	printf("동적 할당한 메모리의 변경 전 주소 : %p\n", pointer);
+	printf("동적 할당한 메모리의 값 : %d\n", *pointer);
 
-	printf("Node1의 data의 값 : %d\n", node1.data);
-	printf("Node2의 data의 값 : %d\n", node1.next->data);
-	printf("Node3의 data의 값 : %d\n", node1.next->next->data);
+	pointer = pointer + 10;
+	*pointer = 128;
+
+	printf("동적 할당한 메모리의 변경 후 주소 : %p\n", pointer);
+	printf("동적 할당한 메모리의 값 : %d\n", *pointer);
+
+
 	return 0;
 } 
