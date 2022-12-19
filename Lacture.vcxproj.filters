@@ -95,5 +95,8 @@
     <ClInclude Include="(2022.12.15) 동적 할당.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="(2022.12.16) 범용 포인터.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

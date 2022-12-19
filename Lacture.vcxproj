@@ -41,6 +41,7 @@
     <ClInclude Include="(2022.12.13) 구조체.h" />
     <ClInclude Include="(2022.12.14) 바이트 패딩.h" />
     <ClInclude Include="(2022.12.15) 동적 할당.h" />
+    <ClInclude Include="(2022.12.16) 범용 포인터.h" />
     <ClInclude Include="(2022.12.2) 문자열.h" />
     <ClInclude Include="(2022.12.5) 함수.h" />
     <ClInclude Include="(2022.12.6) 변수의 범위.h" />
