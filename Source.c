@@ -1,111 +1,72 @@
 ﻿#include <stdio.h>
-
-// 열거형이란?
-// 반드시 하나의 값만 가지게 될 변수들의 집합체입니다.
-
-// 열거형은 정수값으로 정의할 수 없습니다.
-enum State
-{
-// enum은 정수값이 들어가게 되며, 따로 초기화를 해주지 
-// 않았을 때 가장 위에 있는 멤버 값이 0으로 초기화됩니다.
-   IDLE,    // 대기 상태
-   ATTACK = 10,	// 공격 상태
-   DEFENSE,	// 방어 상태
-   DEATH    // 죽은 상태
-  
-// 열거형 멤버 중에서 값을 변경하게 되면 그 뒤에 있는 열거형
-// 멤버들도 같이 값이 바뀝니다.
-};
-
-// typedef 
-// 이미 사용되는 자료형을 다른 새로운 자료형으로 
-// 재정의해주는 키워드입니다.
-
-typedef int INT32; // int == INT32
-
-typedef struct Player
-{
-	int x;
-	int y;
-	const char * shape;
-}PLAYER; // typedef로 정의할 때는 이름을 다르게 정의해야 합니다.
-
-typedef enum Color
-{
-	BLACK,
-	BLUE
-}COLOR;
+#include <time.h>
 
 int main()	
 {
-	// enum
+	// rand( )
 	/*
-	enum State state;
+	// 0 ~ 32767 사이의 난수 값을 반환하는
+	// 함수입니다. 
 
-	// 캐릭터 상태를 지정해줄 수 있습니다.
-	state = ATTACK;
+	// time.h 
+    // 1970년 1월 1일 0시 0분 0초부터 경과되는.
+	// 시간을 초(sec)로 반환하는 함수
 
-	// enum은 상수이기 때문에 값을 바꿀 수 없습니다.
-	// IDLE = 99;
-	
-	//printf("state의 값 : %d", state);
+	srand(time(NULL));
 
-	switch (state)
+	for (int i = 0; i < 10; i++)
 	{
-		case IDLE :	printf("대기 상태");
-			break;
-		case ATTACK : printf("공격 상태");
-			break;
-		case DEFENSE : printf("방어 상태");
-			break;	
-		case DEATH : printf("죽음 상태");
-			break;
+		// rand()함수는 프로그램이 생성될 때 정해진
+		// 값이 출력되기 때문에 프로그램을 여러 번 실행시켜도
+		// 계속 같은 값이 출력됩니다.   
+		int value = rand() % 10 + 1;
+		printf("value의 값 : %d\n", value);
 	}
 	*/
 
-	// typedef
-	/*
-	int value1 = 10;
-	INT32 value2 = 20;
+	// UP-DOWN 게임
+	// 컴퓨터는 1 ~ 50 사이의 난수 값을 가지게 됩니다.
+	srand(time(NULL));
 
-	COLOR color;
-	color = BLUE;
+	int answer = 0;
+	int computer = rand() % 50 + 1;
+	int life = 10;
 
-	PLAYER player;
-	player.shape = 'A';
-	*/
-
-	// 소수
-	// 1보다 큰 자연수 중 1과 자기 자신만을 약수로 가지는 수
-
-	// 1. 정수값 입력
-	int value = 0;
-	int flag = 0;
-
-	scanf_s("%d", &value);
-
-	for (int i = 2; i < value; i++)
+	while(1) // <- 게임 업데이트
 	{
-		if (value % i == 0)
+		if (life <= 0)
 		{
-			flag = 1;
+			printf("\n목숨을 다 소모하였습니다. (패배)\n");
 			break;
 		}
+
+		printf("컴퓨터가 가지고 있는 값을 출력해주세요.\n");
+		printf("현재 목숨 : %d", life);
+		printf("\n내가 선택한 값 : ");
+
+		// 서식 지정(정수) []
+		// call by reference (* ???) 
+
+		
+		scanf_s("%s", &answer);
+
+		if (answer < computer)
+		{
+			life--;
+			printf("\ncomputer가 가지고 있는 값보다 작습니다.\n");
+		}
+		else if(answer > computer)
+		{
+			life--;
+			printf("\ncomputer가 가지고 있는 값보다 큽니다.\n");
+		}
+		else if (answer == computer)
+		{
+			printf("\n컴퓨터가 가지고 있는 값을 찾았습니다. (승리)\n");
+	
+		}
 	}
-
-	if (flag == 0)
-	{
-		printf("소수");
-	}
-	else
-	{
-		printf("소수가 아닙니다.");
-	}
-
-
-	// 소수(O) vs 소수(X)
-
-	// 2,3,5,7,11,13,17,19,23,29,31
+	  
 
 	return 0;
 } 
