@@ -101,5 +101,8 @@
     <ClInclude Include="(2022.12.19) typedef.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="(2022.12.20) rand 함수.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

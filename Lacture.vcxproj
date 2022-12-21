@@ -44,6 +44,7 @@
     <ClInclude Include="(2022.12.16) 범용 포인터.h" />
     <ClInclude Include="(2022.12.19) typedef.h" />
     <ClInclude Include="(2022.12.2) 문자열.h" />
+    <ClInclude Include="(2022.12.20) rand 함수.h" />
     <ClInclude Include="(2022.12.5) 함수.h" />
     <ClInclude Include="(2022.12.6) 변수의 범위.h" />
     <ClInclude Include="(2022.12.7) 값에 의한 전달 및 참조에 의한 전달.h" />
