@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Source.c">
+    <ClCompile Include="Source.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -102,6 +102,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="(2022.12.20) rand 함수.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="(2022.12.21) 키 입력 함수 .h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

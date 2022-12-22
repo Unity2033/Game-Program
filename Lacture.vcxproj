@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Source.c" />
+    <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="(2022.11.10) 주석 및 레파지토리 생성.h" />
@@ -45,6 +45,7 @@
     <ClInclude Include="(2022.12.19) typedef.h" />
     <ClInclude Include="(2022.12.2) 문자열.h" />
     <ClInclude Include="(2022.12.20) rand 함수.h" />
+    <ClInclude Include="(2022.12.21) 키 입력 함수 .h" />
     <ClInclude Include="(2022.12.5) 함수.h" />
     <ClInclude Include="(2022.12.6) 변수의 범위.h" />
     <ClInclude Include="(2022.12.7) 값에 의한 전달 및 참조에 의한 전달.h" />
