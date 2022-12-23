@@ -1,188 +1,118 @@
-﻿#define _CRT_SECURE_NO_WARNINGS
-// 문자열 함수에 대한 경고를 방지하는 전처리기
-
-#include <stdio.h>
+﻿#include <stdio.h>
 #include <windows.h>
-#include <conio.h>
 
-// HANDLE 인덱스에 접근해서 버퍼를 교체시킬 변수
-int screenIndex = 0;
+// 전처리기란?
+// 프로그램이 컴파일되기 이전에 프로그램에 대한 사전
+// 처리하는 과정입니다.
 
-int width = 100;
-int height = 60;
+// 매크로란?
+// 프로그램 내에서 컴파일러가 매크로를 만났을 때, 대체할
+// 문자열을 정의하는 것입니다.
+#define	PI 3.141592
+#define UP 72
 
-// 버퍼를 2개 생성
-HANDLE Screen[2];
+// 매크로 함수 정의
+#define CALCULATOR(x) (x + x)
 
-struct Player
-{
-	int x;
-	int y;
-	const char * shape;
-};
-
-// 구조체 포인터 선언
-Player * player;
-
-// 캐릭터 좌표를 움직이는 함수
-void GotoXY(int x, int y)
-{
-	// COORD는 멤버 변수 x와 y를 가지고 있는 구조체입니다.
-	// 구조체를 정의한 다음 x와 y에 매개변수를 넣어주는 것입니다.
-	COORD position = { x, y };
-	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), position);
-}
-
-// 버퍼를 초기화하는 함수
-void ScreenInit()
-{
-	CONSOLE_CURSOR_INFO cursor;
-	
-	// 버퍼의 가로 사이즈, 버퍼의 세로 사이즈
-	COORD size = { width, height };
-
-	// Left, Top, Right, Bottom
-	SMALL_RECT rect = { 0, 0, width - 1, height - 1 };
-
-	// 화면 2개를 생성합니다.
-	// Front Buffer
-	Screen[0] = CreateConsoleScreenBuffer
-	(
-		GENERIC_READ | GENERIC_WRITE,
-		FILE_SHARE_READ | FILE_SHARE_WRITE,
-		NULL,
-		CONSOLE_TEXTMODE_BUFFER,
-		NULL
-	);
-
-	SetConsoleScreenBufferSize(Screen[0], size);
-
-	SetConsoleWindowInfo(Screen[0], TRUE, &rect);
-
-	// Back Buffer
-	Screen[1] = CreateConsoleScreenBuffer
-	(
-		GENERIC_READ | GENERIC_WRITE,
-		FILE_SHARE_READ | FILE_SHARE_WRITE,
-		NULL,
-		CONSOLE_TEXTMODE_BUFFER,
-		NULL
-	);
-
-	SetConsoleScreenBufferSize(Screen[1], size);
-
-	SetConsoleWindowInfo(Screen[1], TRUE, &rect);
-
-	// 커서의 사이즈 
-	cursor.dwSize = 1;
-
-	// 커서의 활성화 여부
-	// false : 거짓
-	// true : 참
-	cursor.bVisible = false;
-
-	SetConsoleCursorInfo(Screen[0], &cursor);
-	SetConsoleCursorInfo(Screen[1], &cursor);
-}
-
-// 버퍼를 교체하는 함수
-void ScreenFlipping()
-{
-	// 버퍼는 하나만 활성화시킬 수 있습니다.
-	SetConsoleActiveScreenBuffer(Screen[screenIndex]);
-	screenIndex = !screenIndex;
-}
-
-void ScreenClear()
-{
-	COORD coord = { 0,0 };
-
-	// 데이터를 전송하는 BUS(통로)
-	DWORD dw; // unsigned short (2 byte)
-
-	FillConsoleOutputCharacter
-	(
-		Screen[screenIndex],
-		' ',
-		width * height,
-		coord,
-		&dw
-	);
-}
-
-// 버퍼를 해제하는 함수
-void ScreenRelease()
-{
-	CloseHandle(Screen[0]);
-	CloseHandle(Screen[1]);
-}
-
-// 더블 버퍼링을 이용해서 출력하는 함수
-void ScreenPrint(int x, int y, const char * string)
-{
-	COORD cursorPosition = { x, y };
-
-	DWORD dw;
-
-	SetConsoleCursorPosition(Screen[screenIndex], cursorPosition);
-
-	WriteFile
-	(
-		Screen[screenIndex],
-		string,
-		strlen(string),
-		&dw,
-		NULL
-	);
-
-}
+#define width 10
+#define height 10
 
 int main()	
 {
-	// Player 생성
-	player = (Player*)malloc(sizeof(Player));
+	// 매크로
+	/*
+	printf("PI의 값 : %f\n", PI);
 
-	player->x = 5;
-	player->y = 5;
-	player->shape = "♣";
+	// 매크로는 메모리 공간이 존재하지 않기 때문에
+	// 값을 변경할 수 없습니다.
+	// PI = 3000;
 
-	// 1. 버퍼 초기화
-	ScreenInit();
+	int value = 5;
+	printf("%d\n", CALCULATOR(value));
+	*/
 
-	while (1)
-	{		
-		if (GetAsyncKeyState(VK_UP)) // UP
+	// 2차원 배열이란?
+	/*
+	// 배열의 요소로 또 다른 배열을 가지는 배열입니다.
+	char array2D[width][height] =
+	{
+		{ 1,1,1,1,1,1,1,1,1,1 },
+	    { 1,1,0,1,1,0,1,1,0,1 },
+		{ 1,1,0,1,1,0,1,1,0,1 },
+		{ 1,1,0,0,0,1,1,0,0,1 },
+		{ 1,1,1,1,0,1,1,0,1,1 }, 
+		{ 1,0,0,0,0,1,1,0,0,1 },
+		{ 1,1,1,1,0,1,1,1,0,1 },
+		{ 1,0,0,0,0,0,0,1,0,1 },
+		{ 1,1,0,1,1,1,0,0,0,1 },
+		{ 1,1,1,1,1,1,1,1,1,1 },
+	};
+
+
+	for (int i = 0; i < width; i++)
+	{
+		for (int j = 0; j < height; j++)
 		{
-			player->y--;
-			Sleep(100);
-		}
-		else if (GetAsyncKeyState(VK_LEFT))	// LEFT
-		{
-			player->x--;
-			Sleep(100);
-		}
-		else if (GetAsyncKeyState(VK_RIGHT))	// LEFT
-		{
-			player->x++;
-			Sleep(100);
-		}
-		else if (GetAsyncKeyState(VK_DOWN))	// LEFT
-		{
-			player->y++;
-			Sleep(100);
+			if (array2D[i][j] == 1)
+			{
+				printf("■");
+			}
+			else if (array2D[i][j] == 0)
+			{
+				printf("□");
+			}		
 		}
 
-		ScreenPrint(player->x, player->y, player->shape);
+		printf("\n");
+	}
+	*/
 
-		// 2. 버퍼 교체
-		ScreenFlipping();
+	// 글자 타이핑 효과
+	/*
+	int count = 0;
 
-		// 3. 교체된 버퍼의 내용을 삭제
-		ScreenClear();
-	}	
+	const char * content = "League of Legend에 오신 것을 환영합니다.";
 
-	// 게임이 종료되었을 대 버퍼를 해제합니다.
-	ScreenRelease();
+	//[L] ~ [.][\0]
+	while (content[count] != '\0')
+	{
+		//[L][e][a]
+		printf("%c", content[count++]);
+		Sleep(100);
+	}
+
+	// fflush(stdout)
+	*/
+
+	// 글자 색상 설정
+	/*
+	// 0 = 검정색
+	// 1 = 파란색
+	// 2 = 초록색
+	// 3 = 옥색
+	// 4 = 빨간색
+	// 5 = 자주색
+	// 6 = 노란색
+	// 7 = 횐색
+	// 8 = 회색
+	// 9 = 연한 파란색
+	// 10 = 연한 초록색
+	// 11 = 연한 옥색
+	// 12 = 연한 빨간색
+	// 13 = 연한 자주색
+	// 14 = 연한 노란색
+	// 15 = 진한 흰색
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 10);
+
+	printf("안녕하세요. 다들 잘 지내시나요?");
+	*/
+
+	// 콘솔 크기 설정
+	// cols = 가로, lines = 세로
+	//system("mode con:cols=50 lines=10");
+	   
+	// 콘솔 제목 설정
+	SetConsoleTitle(TEXT("League of Legend"));
 
 	return 0;
 } 

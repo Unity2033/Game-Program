@@ -46,6 +46,7 @@
     <ClInclude Include="(2022.12.2) 문자열.h" />
     <ClInclude Include="(2022.12.20) rand 함수.h" />
     <ClInclude Include="(2022.12.21) 키 입력 함수 .h" />
+    <ClInclude Include="(2022.12.22) 더블 버퍼링.h" />
     <ClInclude Include="(2022.12.5) 함수.h" />
     <ClInclude Include="(2022.12.6) 변수의 범위.h" />
     <ClInclude Include="(2022.12.7) 값에 의한 전달 및 참조에 의한 전달.h" />
