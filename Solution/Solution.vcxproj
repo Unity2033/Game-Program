@@ -18,48 +18,12 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="Source.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="(2022.11.10) 주석 및 레파지토리 생성.h" />
-    <ClInclude Include="(2022.11.11) 자료형 및 출력 함수.h" />
-    <ClInclude Include="(2022.11.14) 변수와 상수.h" />
-    <ClInclude Include="(2022.11.15) 비트와 바이트.h" />
-    <ClInclude Include="(2022.11.16) 비트 연산자.h" />
-    <ClInclude Include="(2022.11.17) 오버플로우와 언더플로우.h" />
-    <ClInclude Include="(2022.11.18) 조건문.h" />
-    <ClInclude Include="(2022.11.21) 논리 연산자.h" />
-    <ClInclude Include="(2022.11.22) 부동 소수점 오차.h" />
-    <ClInclude Include="(2022.11.23) 반복문.h" />
-    <ClInclude Include="%282022.11.25%29 continue문.h" />
-    <ClInclude Include="(2022.11.28) 복합 대입 연산자.h" />
-    <ClInclude Include="%282022.11.29%29 주소 연산자.h" />
-    <ClInclude Include="(2022.11.30) 포인터.h" />
-    <ClInclude Include="(2022.12.1) 배열.h" />
-    <ClInclude Include="(2022.12.12) 인라인 함수.h" />
-    <ClInclude Include="(2022.12.13) 구조체.h" />
-    <ClInclude Include="(2022.12.14) 바이트 패딩.h" />
-    <ClInclude Include="(2022.12.15) 동적 할당.h" />
-    <ClInclude Include="(2022.12.16) 범용 포인터.h" />
-    <ClInclude Include="(2022.12.19) typedef.h" />
-    <ClInclude Include="(2022.12.2) 문자열.h" />
-    <ClInclude Include="(2022.12.20) rand 함수.h" />
-    <ClInclude Include="(2022.12.21) 키 입력 함수 .h" />
-    <ClInclude Include="(2022.12.22) 더블 버퍼링.h" />
-    <ClInclude Include="(2022.12.5) 함수.h" />
-    <ClInclude Include="(2022.12.6) 변수의 범위.h" />
-    <ClInclude Include="(2022.12.7) 값에 의한 전달 및 참조에 의한 전달.h" />
-    <ClInclude Include="(2022.12.8) 재귀 함수.h" />
-    <ClInclude Include="(2022.12.9) 포인터를 상수화하는 방법.h" />
-  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{c1a5974f-78d1-4d45-895a-1be4ca2fe2e5}</ProjectGuid>
-    <RootNamespace>Lacture</RootNamespace>
+    <ProjectGuid>{8d8241b3-2a0e-4542-9149-064e9e6f712e}</ProjectGuid>
+    <RootNamespace>Solution</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>Lecture</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -106,18 +70,6 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <LinkIncremental>true</LinkIncremental>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <LinkIncremental>false</LinkIncremental>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <LinkIncremental>true</LinkIncremental>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <LinkIncremental>false</LinkIncremental>
-  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
@@ -174,6 +126,9 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Source.cpp" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
