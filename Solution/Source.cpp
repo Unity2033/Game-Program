@@ -1,90 +1,120 @@
 #include <iostream>
-#include "DataFile.h"
-#include "stdafx.h"
+#include "IPhone.h"
 
 using namespace std;
 
-#pragma region 깊은 복사
-      // 객체를 복사할 때, 참조 값이 아닌 인스턴스 자체를 새로
-      // 복사하여 서로 다른 메모리를 생성하는 복사입니다.
+#pragma region 상속
+     // 상위 클래스의 속성을 하위 클래스가 사용할
+     // 수 있도록 설정해주는 기능입니다.
 
-class GameObject
+class Parent
 {
 public :
-	int size;
-	int * data;
-	static int deathCount;
+    Parent()
+    {
+        cout << "Parent() 클래스 생성" << endl;
+    }
 
-	GameObject(int m_size)
-	{
-		size = m_size;
-		data = new int[size];
-	}
+    ~Parent()
+    {
+        cout << "Parent() 클래스 소멸" << endl;
+    }
 
-	GameObject(const GameObject & clone)
-	{
-		size = clone.size;
-		data = new int[size];
-	}
-								 
-	~GameObject()
-	{
-		delete [] data;
-		deathCount++;
-		cout << "게임 오브젝트가 파괴된 횟수 : " << deathCount << endl;
-	}
+    void Speak(int a)
+    {
+        // this 포인터
+        // 자기 자신을 가리키는 포인터입니다.
+        this->a = a;
+
+        // this 포인터는 호출된 객체를 가리키는 상수 포인터입니다.
+
+        // 상수 포인터 자료형이므로 포인터 자체가 다른 것을 
+        // 가리키도록 할 수 없습니다.
+        cout << this << endl;
+        cout << "Speak( )" << endl;
+    }
+
+    int a;
+protected :
+    int b;
+private :
+    int c;
 };
 
-int GameObject::deathCount = 0;
+class Child : public Parent
+{
+public :
+    Child()
+    {
+        // public 상속
+        /*
+         a = 100; (o)
+         b = 200; (o)
+         c = 300; (x)
+        */
+
+        // protected 상속
+        /*
+         a = 100; (o)
+         b = 200; (o)
+         c = 300; (x)
+        */
+
+        // private 상속
+        /*
+            a = 100; (o)
+            b = 200; (o)
+            c = 300; (x)
+        */
+           
+        cout << "Child() 클래스 생성" << endl;
+    }
+
+    ~Child()
+    {
+        cout << "Child() 클래스 소멸" << endl;
+    }
+
+    int d;
+};
 
 #pragma endregion
-		
-
-// 외부 변수
-int globalValue = 100;
 
 int main()
 {
-#pragma region 얕은 복사
-	// 객체를 복사할 때 주솟값을 복사하여 같은 메모리를 
-	// 가리키는 복사입니다.
+#pragma region 상속
+    // Child child;
 
-	// int * ptr1 = new int;
-	// 
-	// int * ptr2 = ptr1;
-	// 
-	// *ptr1 = 100;
-	// *ptr2 = 999;
-	// 
-	// cout << "ptr1이 가리키는 값 : " << *ptr1 << endl; 
-	// cout << "ptr2가 가리키는 값 : " << *ptr2 << endl;
-	// 
-	// // 얕은 복사의 경우 같은 객체가 서로 같은 메모리 공간을
-	// // 참조하고 있기 때문에 하나의 객체로 값을 변경하게 되면
-	// // 서로 참조된 객체도 함께 영향을 받습니다.
-	// delete ptr1;
-	// delete ptr2;
-
+    // public 상속 시
+    // child.a = 999;
+    // protected로 상속 시 접근할 수 있는 멤버 변수가 존재하지 않습니다.
+    // private로 상속 시 접근할 수 있는 멤버 변수가 존재하지 않습니다.
 #pragma endregion
 
-#pragma region 깊은 복사
-	// GameObject obj1(3);
-	// obj1.data[0] = 111;
-	// 
-	// GameObject obj2 = obj1;
-	// obj2.data[0] = 222;
-	// 
-	// cout << "obj1.data[0] : " << obj1.data[0] << endl;
-	// cout << "obj2.data[0] : " << obj2.data[0] << endl;
+#pragma region this 포인터
+    // Parent parent1;
+    // parent1.Speak(10);
+    // 
+    // Parent parent2;
+    // parent2.Speak(20);
+    // 
+    // Parent parent3;
+    // parent3.Speak(30);
 #pragma endregion
 
-	GameObject::deathCount;
+#pragma region 클래스의 메모리 크기
+    // Parent p1; // int (a), (b), (c) 
+    // Child c1;  // int (d)
 
-	//GameObject monster1(1);
-	//GameObject monster2(1);
-	//GameObject monster3(1);
+    // cout << "Parent 사이즈의 크기 : " << sizeof(p1) << endl;
+    // cout << "Child 사이즈의 크기 : " << sizeof(c1) << endl;
+#pragma endregion
 
-    
+    IPhone iPhone14;
+
+    iPhone14.SetControlSound(5);
+
+    cout << iPhone14.GetVolume() << endl;
 
 	return 0;
 }
