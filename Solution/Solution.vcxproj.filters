@@ -42,6 +42,9 @@
     <ClCompile Include="Weapon.cpp">
       <Filter>Class Cpp</Filter>
     </ClCompile>
+    <ClCompile Include="Vector3.cpp">
+      <Filter>Class Cpp</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="(2023.6.12) 입출력.h">
@@ -81,6 +84,12 @@
       <Filter>Class Header</Filter>
     </ClInclude>
     <ClInclude Include="Weapon.h">
+      <Filter>Class Header</Filter>
+    </ClInclude>
+    <ClInclude Include="(2023.6.20) 다중 상속.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector3.h">
       <Filter>Class Header</Filter>
     </ClInclude>
   </ItemGroup>

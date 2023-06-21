@@ -1,28 +1,64 @@
 #include <iostream>
-#include "Computer.h"
+#include "Vector3.h"
 
 using namespace std;
 
+#pragma region ´ÙÇü¼º
+   // ¿©·¯ °³ÀÇ ¼­·Î ´Ù¸¥ °´Ã¼°¡ µ¿ÀÏÇÑ ±â´ÉÀ»
+   // ¼­·Î ´Ù¸¥ ¹æ¹ıÀ¸·Î Ã³¸®ÇÒ ¼ö ÀÖ´Â ±â´ÉÀÔ´Ï´Ù.
+#pragma endregion
 
-
-int main()
+#pragma region ÇÔ¼öÀÇ ¿À¹ö·Îµù
+   // °°Àº ÀÌ¸§ÀÇ ÇÔ¼ö¸¦ ¸Å°³ º¯¼öÀÇ ÀÚ·áÇü°ú ¸Å°³º¯¼öÀÇ
+   // ¼ö·Î ±¸ºĞÇÏ¿© ¿©·¯ °³¸¦ ¼±¾ğÇÒ ¼ö ÀÖ´Â ±â´ÉÀÔ´Ï´Ù.
+void Add(int x, int y)
 {
-#pragma region ë‹¤ì¤‘ ìƒì†
-	// í•˜ë‚˜ì˜ í•˜ìœ„ í´ë˜ìŠ¤ê°€ ì—¬ëŸ¬ ê°œì˜ ìƒìœ„ í´ë˜ìŠ¤ë¥¼
-	// ìƒì†ë°›ëŠ” ê²ƒì…ë‹ˆë‹¤.
+	std::cout << x + y << std::endl;
+}
 
-	// Computer computer;
-	//
-	//// ë‹¤ì¤‘ ìƒì†ì€ ì—¬ëŸ¬ ê°œì˜ ìƒìœ„ í´ë˜ìŠ¤ì— ì¤‘ë³µë˜ëŠ”
-	//// ì†ì„±ì´ ì¡´ì¬í•  ìˆ˜ ìˆê¸° ë•Œë¬¸ì— ë²”ìœ„ ì§€ì • ì—°ì‚°ìë¥¼
-	//// í†µí•´ì„œ ìƒìœ„ í´ë˜ìŠ¤ì˜ ì´ë¦„ì„ ì„ í—Œí•˜ê³  ì†ì„±ì„ ì‚¬ìš©í•´ì•¼ í•©ë‹ˆë‹¤.
-	//computer.Keyboard::price = 10000;
-	//
-    // computer.OnDrag();
-	// computer.Input('A');
+   // ÇÔ¼öÀÇ ¿À¹ö·ÎµùÀÇ °æ¿ì ÇÔ¼öÀÇ ¸Å°³º¯¼ö¿¡ Àü´ŞÇÏ´Â
+   // ÀÎ¼öÀÇ ÇüÅÂ¸¦ º¸°í È£ÃâÇÏ¹Ç·Î, ¹İÈ¯ÇüÀ¸·Î ÇÔ¼öÀÇ
+   // ¿À¹ö·ÎµùÀ» »ı¼ºÇÒ ¼ö ¾ø½À´Ï´Ù.
+   // ex) int Add(int x, int y)
+   // {
+   // 	 return x + y;
+   // }
+
+void Add(float x, float y)
+{
+	std::cout << x + y << std::endl;
+}
 
 #pragma endregion
 
+int main()
+{
+#pragma region ÇÔ¼öÀÇ ¿À¹ö·Îµù
+	// Add(10, 20); 
+	// Add(10.5f, 9.85f);	
+#pragma endregion
+
+#pragma region ¿¬»êÀÚ ¿À¹ö·Îµù
+	// Vector3 v1(2, 2, 2);
+	// v1.Print();
+	// 
+	// Vector3 v2(3, 3, 3);
+	// v2.Print();
+	// 
+	// Vector3 v3 = v1 + v2;
+	// v3.Print();
+
+	// ´ÜÇ× ¿¬»êÀÚ
+	// ++, -- 
+
+	Vector3 v4(1, 1, 1);
+	
+	++(++v4);
+
+	v4.Print();
+
+
+#pragma endregion
 
 
 	return 0;
