@@ -133,6 +133,7 @@
     <ClCompile Include="Keyboard.cpp" />
     <ClCompile Include="Mouse.cpp" />
     <ClCompile Include="Source.cpp" />
+    <ClCompile Include="Sword.cpp" />
     <ClCompile Include="Vector3.cpp" />
     <ClCompile Include="Weapon.cpp" />
   </ItemGroup>
@@ -144,12 +145,14 @@
     <ClInclude Include="(2023.6.16) 얕은 복사와 깊은 복사.h" />
     <ClInclude Include="(2023.6.19) 상속.h" />
     <ClInclude Include="(2023.6.20) 다중 상속.h" />
+    <ClInclude Include="(2023.6.21) 오버로딩.h" />
     <ClInclude Include="Computer.h" />
     <ClInclude Include="DataFile.h" />
     <ClInclude Include="Divice.h" />
     <ClInclude Include="IPhone.h" />
     <ClInclude Include="Keyboard.h" />
     <ClInclude Include="Mouse.h" />
+    <ClInclude Include="Sword.h" />
     <ClInclude Include="Vector3.h" />
     <ClInclude Include="Weapon.h" />
   </ItemGroup>
