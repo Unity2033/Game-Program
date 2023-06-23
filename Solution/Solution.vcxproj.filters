@@ -48,6 +48,12 @@
     <ClCompile Include="Sword.cpp">
       <Filter>Class Cpp</Filter>
     </ClCompile>
+    <ClCompile Include="Marine.cpp">
+      <Filter>Class Cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="Unit.cpp">
+      <Filter>Class Cpp</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="(2023.6.12) 입출력.h">
@@ -99,6 +105,15 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Sword.h">
+      <Filter>Class Header</Filter>
+    </ClInclude>
+    <ClInclude Include="(2023.6.22) 가상 함수.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Marine.h">
+      <Filter>Class Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Unit.h">
       <Filter>Class Header</Filter>
     </ClInclude>
   </ItemGroup>

@@ -1,5 +1,15 @@
 #include "Sword.h"
 
+Sword::Sword()
+{
+	std::cout << "Sword() »ý¼º" << std::endl;
+}
+
+Sword::~Sword()
+{
+	std::cout << "Sword() ¼Ò¸ê" << std::endl;
+}
+
 void Sword::Stat()
 {
 	attack = 999;
