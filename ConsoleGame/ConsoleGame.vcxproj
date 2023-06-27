@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{8d8241b3-2a0e-4542-9149-064e9e6f712e}</ProjectGuid>
-    <RootNamespace>Solution</RootNamespace>
+    <ProjectGuid>{2448d392-240d-4da5-b16f-94c337bfa4f4}</ProjectGuid>
+    <RootNamespace>ConsoleGame</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,45 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Computer.cpp" />
-    <ClCompile Include="Divice.cpp" />
-    <ClCompile Include="Ghost.cpp" />
-    <ClCompile Include="IPhone.cpp" />
-    <ClCompile Include="Item.cpp" />
-    <ClCompile Include="Keyboard.cpp" />
-    <ClCompile Include="Marine.cpp" />
-    <ClCompile Include="Mouse.cpp" />
-    <ClCompile Include="Source.cpp" />
-    <ClCompile Include="Sword.cpp" />
-    <ClCompile Include="Unit.cpp" />
-    <ClCompile Include="Vector3.cpp" />
-    <ClCompile Include="Weapon.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="(2023.6.12) 입출력.h" />
-    <ClInclude Include="(2023.6.13) 이름 공간.h" />
-    <ClInclude Include="(2023.6.14) 클래스.h" />
-    <ClInclude Include="(2023.6.15) 생성자와 소멸자.h" />
-    <ClInclude Include="(2023.6.16) 얕은 복사와 깊은 복사.h" />
-    <ClInclude Include="(2023.6.19) 상속.h" />
-    <ClInclude Include="(2023.6.20) 다중 상속.h" />
-    <ClInclude Include="(2023.6.21) 오버로딩.h" />
-    <ClInclude Include="(2023.6.22) 가상 함수.h" />
-    <ClInclude Include="(2023.6.23) 순수 가상 함수.h" />
-    <ClInclude Include="(2023.6.26) 업 캐스팅.h" />
-    <ClInclude Include="Computer.h" />
-    <ClInclude Include="DataFile.h" />
-    <ClInclude Include="Divice.h" />
-    <ClInclude Include="Ghost.h" />
-    <ClInclude Include="IPhone.h" />
-    <ClInclude Include="Item.h" />
-    <ClInclude Include="Keyboard.h" />
-    <ClInclude Include="Marine.h" />
-    <ClInclude Include="Mouse.h" />
-    <ClInclude Include="Sword.h" />
-    <ClInclude Include="Unit.h" />
-    <ClInclude Include="Vector3.h" />
-    <ClInclude Include="Weapon.h" />
+    <ClCompile Include="ConsoleGame.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

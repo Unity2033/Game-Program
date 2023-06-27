@@ -16,7 +16,7 @@ void Sword::Stat()
 	std::cout << "검 공격력 : " << attack << std::endl;
 }
 
-void Sword::Attack()
+void Sword::Attack()									
 {
 	std::cout << "베기" << std::endl;
 }

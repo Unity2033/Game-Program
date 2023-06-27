@@ -47,8 +47,5 @@ int main()
 	// 접근 지정자는 공개로 설정해야 합니다.
 #pragma endregion
 
-
-
-
 	return 0;
 }

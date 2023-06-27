@@ -54,6 +54,12 @@
     <ClCompile Include="Unit.cpp">
       <Filter>Class Cpp</Filter>
     </ClCompile>
+    <ClCompile Include="Ghost.cpp">
+      <Filter>Class Cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="Item.cpp">
+      <Filter>Class Cpp</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="(2023.6.12) 입출력.h">
@@ -114,6 +120,18 @@
       <Filter>Class Header</Filter>
     </ClInclude>
     <ClInclude Include="Unit.h">
+      <Filter>Class Header</Filter>
+    </ClInclude>
+    <ClInclude Include="(2023.6.23) 순수 가상 함수.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Ghost.h">
+      <Filter>Class Header</Filter>
+    </ClInclude>
+    <ClInclude Include="(2023.6.26) 업 캐스팅.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Item.h">
       <Filter>Class Header</Filter>
     </ClInclude>
   </ItemGroup>
