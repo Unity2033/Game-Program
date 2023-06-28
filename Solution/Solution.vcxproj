@@ -153,6 +153,7 @@
     <ClInclude Include="(2023.6.22) 가상 함수.h" />
     <ClInclude Include="(2023.6.23) 순수 가상 함수.h" />
     <ClInclude Include="(2023.6.26) 업 캐스팅.h" />
+    <ClInclude Include="(2023.6.27) 스마트 포인터.h" />
     <ClInclude Include="Computer.h" />
     <ClInclude Include="DataFile.h" />
     <ClInclude Include="Divice.h" />

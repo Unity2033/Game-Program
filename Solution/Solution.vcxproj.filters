@@ -134,5 +134,8 @@
     <ClInclude Include="Item.h">
       <Filter>Class Header</Filter>
     </ClInclude>
+    <ClInclude Include="(2023.6.27) 스마트 포인터.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
