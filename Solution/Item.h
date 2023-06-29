@@ -2,6 +2,7 @@
 #include <iostream>
 #include <memory>
 
+static int itemCode;
 
 class Item
 {
@@ -32,8 +33,6 @@ public:
 	Item();
 	~Item();
 };
-
-static int itemCode;
 
 template<typename T>
 void Item::Search(T data)

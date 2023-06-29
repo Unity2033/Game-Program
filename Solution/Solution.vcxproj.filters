@@ -60,6 +60,18 @@
     <ClCompile Include="Item.cpp">
       <Filter>Class Cpp</Filter>
     </ClCompile>
+    <ClCompile Include="Animal.cpp">
+      <Filter>Class Cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="Carnivore.cpp">
+      <Filter>Class Cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="Tiger.cpp">
+      <Filter>Class Cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="Lion.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="(2023.6.12) 입출력.h">
@@ -135,6 +147,21 @@
       <Filter>Class Header</Filter>
     </ClInclude>
     <ClInclude Include="(2023.6.27) 스마트 포인터.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="(2023.6.28) 템플릿.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Animal.h">
+      <Filter>Class Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Carnivore.h">
+      <Filter>Class Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Tiger.h">
+      <Filter>Class Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Lion.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
