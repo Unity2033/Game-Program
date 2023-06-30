@@ -70,7 +70,7 @@
       <Filter>Class Cpp</Filter>
     </ClCompile>
     <ClCompile Include="Lion.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Class Cpp</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -161,7 +161,13 @@
     <ClInclude Include="Tiger.h">
       <Filter>Class Header</Filter>
     </ClInclude>
+    <ClInclude Include="(2023.6.29) 예외 처리.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="Lion.h">
+      <Filter>Class Header</Filter>
+    </ClInclude>
+    <ClInclude Include="%282023.6.30%29 다운 캐스팅.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

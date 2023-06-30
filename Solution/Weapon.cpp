@@ -1,10 +1,5 @@
 #include "Weapon.h"
 
-Weapon::Weapon()
-{
-	std::cout << "Weapon() 생성" << std::endl;
-}						   
-
 Weapon::~Weapon()
 {
 	std::cout << "Weapon() 소멸" << std::endl;
@@ -12,7 +7,7 @@ Weapon::~Weapon()
 
 void Weapon::Stat()
 {
-	std::cout << "무기 공격력 : " << attack << std::endl;
+	std::cout << "무기 공격력 : " << m_attack << std::endl;
 }
 
 void Weapon::Attack()
