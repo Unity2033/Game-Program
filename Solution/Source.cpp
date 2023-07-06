@@ -1,99 +1,105 @@
-#pragma once
+﻿#pragma once
 #include <iostream>
 
-// STL <queue ���̺귯��>
-#include <queue>
+// STL <list 라이브러리>
+#include <list>
 
-// STL <stack ���̺귯��>
-#include <stack>
+// STL <map 라이브러리>
+#include <map>
 
-// STL <vector ���̺귯��>
-#include <vector>
+// STL <set 라이브러리>
+#include <set>
 
 using namespace std;
 
 int main()
 {
-#pragma region ���ڿ� Ŭ���� (std::string)
-	std::string string("���ڿ�");
-	std::string name;
+#pragma region 연관 컨테이너
+	// Key와 Value처럼 관련있는 데이터를 하나의 쌍으로
+	// 저장하는 컨테이너입니다.
 
-#pragma region �����̳� ������
-	// ���� �����̳��� �������̽��� �����Ͽ� ���� ������
-	// ���ѵǰų� ������ �����̳��Դϴ�.
-
-	// std::queue
-	/*
-	std::queue<int>	queue;
-
-	queue.push(10);
-	queue.push(20);
-	queue.push(30);
-	queue.push(40);
-	queue.push(50);
-
-	// queue.pop();
-
-	while (queue.empty() == false)
-	{
-		std::cout << queue.front() << std::endl;
-		queue.pop();
-	}
-
-	// �����̳ʿ� �����Ͱ� ���� �� pop()�� �õ��ϸ�
-	// ��Ÿ�� ������ �߻��մϴ�.
-	// queue.pop();
+	// std::list
+    /*
+	// std::list<int> list;
+	// 
+	// list.push_front(100);
+	// list.push_back(45);
+	// list.push_back(33);
+	// list.push_back(11);
+	// list.push_back(7);
+	// 
+	// // iterator
+	// std::list<int>::iterator iter;
+	// 
+	// for (iter = list.begin(); iter != list.end(); iter++)
+	// {
+	// 	  std::cout << "List의 값 : " << *iter << std::endl;
+	// }
+	// 
+	// list.pop_front(); // 45, 33, 11, 7
+	// list.pop_back(); // 45, 33, 11
+	// 
+	// iter = list.begin();
+	// 
+	// iter++;
+	// 
+	// list.insert(iter, 99); // 45, 99, 33, 11
+	// list.erase(iter); // 45, 99, 11
+	// 
+	// std::cout << std::endl;
+	// 
+	// for (iter = list.begin(); iter != list.end(); iter++)
+	// {
+	// 	  std::cout << "List의 값 : " << *iter << std::endl;
+	// }
 	*/
 
-	// std::swap
+	// std::map
 	/*
-	int a = 10;
-	int b = 20;
+	std::map<const char*, int> map;
 
-	std::swap(a, b);
+	                              // Item(이름) (가격)               
+	map.insert(pair<const char*, int>("Sword", 1000));
+	map.insert(pair<const char*, int>("Shoes", 500));
 
-	std::cout << "a�� �� : " << a << std::endl;
-	std::cout << "b�� �� : " << b << std::endl;
-	*/
 
-	// std::stack
-	/*
-	std::stack<int> stack;
+	std::map<const char*, int>::iterator mapIterator;
 
-	stack.push(10);
-	stack.push(20);
-	stack.push(30);
-	stack.push(40);
-	stack.push(50);
-
-	while (stack.size() != 0)
+	for (mapIterator = map.begin(); mapIterator != map.end(); mapIterator++)
 	{
-		std::cout << stack.top() << std::endl;
-		stack.pop();
+		// mapIterator->first (KEY)
+		// mapIterator->second (VALUE)
+		std::cout << "KEY : " << mapIterator->first << " VALUE : " << mapIterator->second << std::endl;
+	}
+
+	// map.find( ) : KEY를 검색하는 함수입니다.
+	if (map.find("Gloves") != map.end())
+	{
+		std::cout << "KEY가 존재합니다. " << std::endl;
+	}
+	else
+	{
+		std::cout << "KEY가 존재하지 않습니다. " << std::endl;
 	}
 	*/
 
-	// std::iterator �ݺ���
+	// std::set
 	/*
-	std::vector<int> vector;
+	std::set<int> set;
 
-	vector.push_back(10); // 10
-	vector.push_back(20); // 10 20
-	vector.push_back(30); // 10 20 30
+	set.insert(45);
+	set.insert(96);
+	set.insert(7);
+	set.insert(12);
 
-	std::vector<int>::iterator iter;
+	// clear() : 모든 원소를 삭제하는 함수입니다.
+	set.clear();
 
-	vector.insert(vector.begin() + 1, 999);
-
-	vector.erase(vector.begin() + 3);
-
-	for (iter = vector.begin(); iter != vector.end(); iter++)
+	// set은 자동으로 정렬이 일어납니다.
+	for (auto& element : set)
 	{
-		std::cout << *iter << std::endl;
+		std::cout << element << std::endl;
 	}
-
-	// iter�� ����Ű�� ���� �������ּ���.
-	// std::cout << "iter�� ����Ű�� �� : " << *iter << std::endl;
 	*/
 #pragma endregion
 

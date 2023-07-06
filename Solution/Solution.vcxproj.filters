@@ -176,5 +176,8 @@
     <ClInclude Include="(2023.7.4) 문자열 클래스.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="(2023.7.5) 컨테이너 어댑터.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
