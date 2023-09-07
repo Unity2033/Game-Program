@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{8d8241b3-2a0e-4542-9149-064e9e6f712e}</ProjectGuid>
+    <ProjectGuid>{8fe462ff-c4e7-4a37-8a78-73752e17133c}</ProjectGuid>
     <RootNamespace>Solution</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -127,60 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Animal.cpp" />
-    <ClCompile Include="Carnivore.cpp" />
-    <ClCompile Include="Computer.cpp" />
-    <ClCompile Include="Divice.cpp" />
-    <ClCompile Include="Ghost.cpp" />
-    <ClCompile Include="IPhone.cpp" />
-    <ClCompile Include="Item.cpp" />
-    <ClCompile Include="Keyboard.cpp" />
-    <ClCompile Include="Lion.cpp" />
-    <ClCompile Include="Marine.cpp" />
-    <ClCompile Include="Mouse.cpp" />
-    <ClCompile Include="Source.cpp" />
-    <ClCompile Include="Sword.cpp" />
-    <ClCompile Include="Tiger.cpp" />
-    <ClCompile Include="Unit.cpp" />
-    <ClCompile Include="Vector3.cpp" />
-    <ClCompile Include="Weapon.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="(2023.6.12) 입출력.h" />
-    <ClInclude Include="(2023.6.13) 이름 공간.h" />
-    <ClInclude Include="(2023.6.14) 클래스.h" />
-    <ClInclude Include="(2023.6.15) 생성자와 소멸자.h" />
-    <ClInclude Include="(2023.6.16) 얕은 복사와 깊은 복사.h" />
-    <ClInclude Include="(2023.6.19) 상속.h" />
-    <ClInclude Include="(2023.6.20) 다중 상속.h" />
-    <ClInclude Include="(2023.6.21) 오버로딩.h" />
-    <ClInclude Include="(2023.6.22) 가상 함수.h" />
-    <ClInclude Include="(2023.6.23) 순수 가상 함수.h" />
-    <ClInclude Include="(2023.6.26) 업 캐스팅.h" />
-    <ClInclude Include="(2023.6.27) 스마트 포인터.h" />
-    <ClInclude Include="(2023.6.28) 템플릿.h" />
-    <ClInclude Include="(2023.6.29) 예외 처리.h" />
-    <ClInclude Include="%282023.6.30%29 다운 캐스팅.h" />
-    <ClInclude Include="(2023.7.3) 선형 컨테이너.h" />
-    <ClInclude Include="(2023.7.4) 문자열 클래스.h" />
-    <ClInclude Include="(2023.7.5) 컨테이너 어댑터.h" />
-    <ClInclude Include="Animal.h" />
-    <ClInclude Include="Carnivore.h" />
-    <ClInclude Include="Computer.h" />
-    <ClInclude Include="DataFile.h" />
-    <ClInclude Include="Divice.h" />
-    <ClInclude Include="Ghost.h" />
-    <ClInclude Include="IPhone.h" />
-    <ClInclude Include="Item.h" />
-    <ClInclude Include="Keyboard.h" />
-    <ClInclude Include="Lion.h" />
-    <ClInclude Include="Marine.h" />
-    <ClInclude Include="Mouse.h" />
-    <ClInclude Include="Sword.h" />
-    <ClInclude Include="Tiger.h" />
-    <ClInclude Include="Unit.h" />
-    <ClInclude Include="Vector3.h" />
-    <ClInclude Include="Weapon.h" />
+    <ClCompile Include="Solution.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
