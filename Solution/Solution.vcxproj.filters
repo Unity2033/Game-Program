@@ -27,6 +27,12 @@
     <ClCompile Include="Vulture.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="SigueTank.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Goliath.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Camera.h">
@@ -36,6 +42,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Vulture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SigueTank.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Goliath.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -15,3 +15,8 @@ void Vulture::Attack()
 {
 	cout << "国贸 傍拜" << endl;
 }
+
+Vulture::~Vulture()
+{
+	cout << "国贸 昏力" << endl;
+}
