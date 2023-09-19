@@ -1,10 +1,10 @@
 #pragma once
 #include "Unit.h"
 
-class Marine : public Unit
+class Firebat : public Unit
 {
-public :
-    Marine();
+public:
+    Firebat();
 
     int GetHP() override;
     void Skill() override;

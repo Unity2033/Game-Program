@@ -19,6 +19,12 @@
     <Filter Include="Source Files\Mechanic">
       <UniqueIdentifier>{25605d8f-349b-48d7-84b0-24a066f7baa8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Bionic">
+      <UniqueIdentifier>{1ac2bbad-6592-43e2-b5cf-31cabb1ca2c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Bionic">
+      <UniqueIdentifier>{c56870c3-fc8c-4b60-97d6-360b480feb28}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Solution.cpp">
@@ -39,8 +45,14 @@
     <ClCompile Include="Vulture.cpp">
       <Filter>Source Files\Mechanic</Filter>
     </ClCompile>
+    <ClCompile Include="Firebat.cpp">
+      <Filter>Source Files\Bionic</Filter>
+    </ClCompile>
+    <ClCompile Include="Ghost.cpp">
+      <Filter>Source Files\Bionic</Filter>
+    </ClCompile>
     <ClCompile Include="Marine.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Bionic</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -59,11 +71,17 @@
     <ClInclude Include="Vulture.h">
       <Filter>Header Files\Mechanic</Filter>
     </ClInclude>
-    <ClInclude Include="Unit.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="Firebat.h">
+      <Filter>Header Files\Bionic</Filter>
+    </ClInclude>
+    <ClInclude Include="Ghost.h">
+      <Filter>Header Files\Bionic</Filter>
     </ClInclude>
     <ClInclude Include="Marine.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Bionic</Filter>
+    </ClInclude>
+    <ClInclude Include="Unit.h">
+      <Filter>Header Files\Bionic</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

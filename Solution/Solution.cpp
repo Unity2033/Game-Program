@@ -1,64 +1,58 @@
-#include <iostream>
-#include "Marine.h"
-
+ï»¿#include <iostream>
 using namespace std;
 
-#pragma region ÇÔ¼öÀÇ ¿À¹ö·Îµù
-   // °°Àº ÀÌ¸§ÀÇ ÇÔ¼ö¸¦ ¸Å°³ º¯¼öÀÇ ÀÚ·áÇü°ú ¸Å°³º¯¼öÀÇ
-   // ¼ö·Î ±¸ºĞÇÏ¿© ¿©·¯ °³¸¦ ¼±¾ğÇÒ ¼ö ÀÖ´Â ±â´ÉÀÔ´Ï´Ù.
-
-void Calculator(char x, char y)
+class Animal
 {
-	cout << "x + y : " << x + y << endl;
-}
+private :
+	char blood;	  // 1 byte
 
-void Calculator(int x, int y)
-{
-	cout << "x + y : " << x + y << endl;
-}
+	int age;      // 4 byte	  
+	float height; // 4 byte	  
 
-void Calculator(float x, float y)
-{
-	cout << "x + y : " << x + y << endl;
-}
+public :
+	Animal(int m_age, float m_height) : age(m_age), height(m_height) 
+	{ 
+		cout << "age : " << age << endl;
+		cout << "height : " << height << endl;
+	}
 
-// ÇÔ¼öÀÇ ¿À¹ö·ÎµùÀÇ °æ¿ì ÇÔ¼öÀÇ ¸Å°³ º¯¼ö¿¡
-// Àü´ŞÇÏ´Â ÀÎ¼öÀÇ ÇüÅÂ¸¦ º¸°í È£ÃâÇÏ¹Ç·Î, ¹İÈ¯ÇüÀ¸·Î
-// ÇÔ¼öÀÇ ¿À¹ö·ÎµùÀº »ı¼ºÇÒ ¼ö ¾ø½À´Ï´Ù.
-//int Calculator(float x, float y)
-//{
-//
-//}
+#pragma region this í¬ì¸í„°
+	 // ê°ì²´ ìê¸° ìì‹ ì„ ê°€ë¦¬í‚¤ëŠ” í¬ì¸í„°ì…ë‹ˆë‹¤.
+
+	//           'A'	    5		   3.25f
+	Animal(char blood, int age, float height)
+	{
+		this->blood = blood;
+		this->age = age;
+		this->height = height;
+
+		cout << "ê°ì²´ì˜ ì£¼ì†Œ : " << this << endl;
+	}
 
 #pragma endregion
 
-void Recovery(Unit * unit)
-{
+	
+};
 
+int * Value()
+{
+	int data = 10;
+	return &data;
 }
 
 int main()
 {
-#pragma region  ÇÔ¼öÀÇ ¿À¹ö·Îµù
-	//Calculator('A', 'B');
-	//Calculator(10, 20);
-	//Calculator(5.75f, 6.25f);	
-#pragma endregion
+	// Animal animal('A', 3, 3.25f);
 
-#pragma region ¼ø¼ö °¡»ó ÇÔ¼ö
-	// ÇÔ¼ö¸¦ ¼±¾ğ¸¸ ÇÒ ¼ö ÀÖÀ¸¸ç, ÇØ´ç Å¬·¡½º¿¡¼­ ±¸ÇöÀ» ÇÒ ¼ö ¾ø°í,
-	// »ó¼Ó¹ŞÀº ÇÏÀ§ Å¬·¡½º¿¡¼­ ¹İµå½Ã ÀçÁ¤ÀÇ¸¦ ÇØ¾ßÇÏ´Â ¸â¹ö ÇÔ¼öÀÔ´Ï´Ù.
+	int a[5] = {1,2,3,4,5};
 
-	Marine * marine = new Marine;
+	int * ptr = Value();
 
-	marine->SetHP(75);
-	marine->Skill();
+	cout << *ptr << endl;
 
-	Recovery(marine);
+	*ptr = 300;
 
-	cout << marine->GetHP() << endl;
-#pragma endregion
-
+	cout << *ptr << endl;
 
 	return 0;
 }

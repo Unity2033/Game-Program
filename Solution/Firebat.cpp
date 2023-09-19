@@ -1,27 +1,26 @@
-#include "Marine.h"
+#include "Firebat.h"
 
-Marine::Marine()
+Firebat::Firebat()
 {
-	health = 40;
+	health = 50;
 	maxHP = health;
 }
 
-int Marine::GetHP()
+int Firebat::GetHP()
 {
 	return health;
 }
 
-void Marine::Skill()
+void Firebat::Skill()
 {
-	std::cout << "½ºÆÀÆÑ" << std::endl;
 }
 
-void Marine::RecoveryHP()
+void Firebat::RecoveryHP()
 {
 	health = maxHP;
 }
 
-void Marine::SetHP(int value)
+void Firebat::SetHP(int value)
 {
 	if (value >= 0 && value <= maxHP)
 	{
