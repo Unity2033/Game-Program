@@ -54,6 +54,9 @@
     <ClCompile Include="Marine.cpp">
       <Filter>Source Files\Bionic</Filter>
     </ClCompile>
+    <ClCompile Include="LinkedList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Camera.h">
@@ -82,6 +85,9 @@
     </ClInclude>
     <ClInclude Include="Unit.h">
       <Filter>Header Files\Bionic</Filter>
+    </ClInclude>
+    <ClInclude Include="LinkedList.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
