@@ -31,14 +31,14 @@
     <Filter Include="Source Files\Computer">
       <UniqueIdentifier>{957e9c05-0dfc-4e08-8cb7-effdf5251ba0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\etc">
+      <UniqueIdentifier>{ecc89943-ef5e-453e-b58c-b6c2efb8bdf9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\etc">
+      <UniqueIdentifier>{9096128e-4649-40f0-9baf-9b4036180bea}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Solution.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Camera.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Goliath.cpp">
       <Filter>Source Files\Mechanic</Filter>
     </ClCompile>
@@ -60,9 +60,6 @@
     <ClCompile Include="Marine.cpp">
       <Filter>Source Files\Bionic</Filter>
     </ClCompile>
-    <ClCompile Include="LinkedList.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Component.cpp">
       <Filter>Source Files\Computer</Filter>
     </ClCompile>
@@ -75,17 +72,27 @@
     <ClCompile Include="Mouse.cpp">
       <Filter>Source Files\Computer</Filter>
     </ClCompile>
+    <ClCompile Include="Bank.cpp">
+      <Filter>Source Files\etc</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Source Files\etc</Filter>
+    </ClCompile>
+    <ClCompile Include="LinkedList.cpp">
+      <Filter>Source Files\etc</Filter>
+    </ClCompile>
     <ClCompile Include="Player.cpp">
+      <Filter>Source Files\etc</Filter>
+    </ClCompile>
+    <ClCompile Include="Solution.cpp" />
+    <ClCompile Include="Inventory.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Bank.cpp">
+    <ClCompile Include="Item.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Camera.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Goliath.h">
       <Filter>Header Files\Mechanic</Filter>
     </ClInclude>
@@ -110,9 +117,6 @@
     <ClInclude Include="Unit.h">
       <Filter>Header Files\Bionic</Filter>
     </ClInclude>
-    <ClInclude Include="LinkedList.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Component.h">
       <Filter>Header Files\Computer</Filter>
     </ClInclude>
@@ -125,10 +129,22 @@
     <ClInclude Include="Mouse.h">
       <Filter>Header Files\Computer</Filter>
     </ClInclude>
+    <ClInclude Include="Bank.h">
+      <Filter>Header Files\etc</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Header Files\etc</Filter>
+    </ClInclude>
+    <ClInclude Include="LinkedList.h">
+      <Filter>Header Files\etc</Filter>
+    </ClInclude>
     <ClInclude Include="Player.h">
+      <Filter>Header Files\etc</Filter>
+    </ClInclude>
+    <ClInclude Include="Inventory.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Bank.h">
+    <ClInclude Include="Item.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
