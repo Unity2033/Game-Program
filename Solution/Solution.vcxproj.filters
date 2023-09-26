@@ -84,11 +84,16 @@
     <ClCompile Include="Player.cpp">
       <Filter>Source Files\etc</Filter>
     </ClCompile>
-    <ClCompile Include="Solution.cpp" />
     <ClCompile Include="Inventory.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Item.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InputKey.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Solution.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -145,6 +150,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Item.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InputKey.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
