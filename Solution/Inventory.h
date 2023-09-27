@@ -16,7 +16,9 @@ private :
 public :
 	Inventory(int x = 5, int y = 3);
 
+	void ShowItem();
 	void AddItem();
 	void Renderer();
+	void SelectNumber(InputKey inputKey);
 };
 

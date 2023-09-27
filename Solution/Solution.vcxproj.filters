@@ -37,6 +37,12 @@
     <Filter Include="Source Files\etc">
       <UniqueIdentifier>{9096128e-4649-40f0-9baf-9b4036180bea}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Inventory">
+      <UniqueIdentifier>{e9a56ec8-8e0e-43ec-9151-83e0588ae325}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Inventory">
+      <UniqueIdentifier>{d075a093-96c5-44ff-822f-f2aabecaf13e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Goliath.cpp">
@@ -84,17 +90,17 @@
     <ClCompile Include="Player.cpp">
       <Filter>Source Files\etc</Filter>
     </ClCompile>
-    <ClCompile Include="Inventory.cpp">
+    <ClCompile Include="Solution.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Item.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Inventory</Filter>
     </ClCompile>
     <ClCompile Include="InputKey.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Inventory</Filter>
     </ClCompile>
-    <ClCompile Include="Solution.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="Inventory.cpp">
+      <Filter>Source Files\Inventory</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -146,14 +152,14 @@
     <ClInclude Include="Player.h">
       <Filter>Header Files\etc</Filter>
     </ClInclude>
+    <ClInclude Include="InputKey.h">
+      <Filter>Header Files\Inventory</Filter>
+    </ClInclude>
     <ClInclude Include="Inventory.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Inventory</Filter>
     </ClInclude>
     <ClInclude Include="Item.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="InputKey.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Inventory</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
