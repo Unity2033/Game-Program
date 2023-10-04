@@ -1,86 +1,59 @@
 ﻿#include <iostream>
-#include <vector>
-#include <time.h>
-#include <conio.h>
-#include <windows.h>
+#include <stack>
+#include <queue>
 
 using namespace std;
 
-#pragma region 선형 컨테이너
-   // 데이터를 선형으로 저장하며, 특별한 제약이나
-   // 규칙이 없는 일반적인 컨테이너입니다.
-
+#pragma region 컨테이너 어댑터
+    // 기존 컨테이너의 인터페이스를 제한하여
+    // 만든 기능이 제한되거나 변형된 컨테이너입니다.
 #pragma endregion
-
-
-int createCount;
 
 int main()
 {
-#pragma region Vector 컨테이너
-	//std::vector<int> vector;
+#pragma region 컨테이너 어댑터 (Stack) 
 
-	//// push_back() : 뒤 쪽에 데이터를 저장하는 함수
-	////  0	 1	  2
-	//// [10]	[20] [30]
-	//vector.push_back(10);
-	//vector.push_back(20);
-	//vector.push_back(30);
+    //std::stack<int> stack;
 
-	//cout << "vector.size : " << vector.size() << endl;
-	//cout << "capacity : " << vector.capacity() << endl;
- //
-	//for (int i = 0; i < vector.size(); i++)
-	//{
-	//	cout << vector[i] << endl;
-	//}
+    //stack.push(10);
+    //stack.push(20);
+    //stack.push(30);
+    //stack.push(40);
+    //stack.push(50);
+    //
+    //// cout << "Stack의 Top : " << stack.top() << endl;
 
-	//vector.push_back(40);
-	//vector.push_back(50);
+    // 50
+    // 40
+    // 30
+    // 20
+    // 10 
 
-	////  0	 1	  2	   3
- //   // [10]	[20] [30] [40]
-	//vector.pop_back();
-
-	//cout << "vector.size : " << vector.size() << endl;
-	//cout << "capacity : " << vector.capacity() << endl;
-
-	//for (int i = 0; i < vector.size(); i++)
-	//{
-	//	cout << vector[i] << endl;
-	//}
+    //while (stack.empty() == false)
+    //{
+    //    cout << "Stack의 Top : " << stack.top() << endl;
+    //    stack.pop();
+    //}
 #pragma endregion
 
-#pragma region 리듬 게임
-	srand(time(NULL));
+#pragma region 컨테이너 어댑터 (Queue) 
 
-	std::vector<const char*> note;
-	createCount = 5;
+    std::queue<int> queue;
 
-	for (int i = 0; i < createCount; i++)
-	{
-		int random = rand() % 4;
+    queue.push(10);
+    queue.push(20);
+    queue.push(30);
+    queue.push(40);
 
-		switch (random)
-		{
-			case 0: note.push_back("↑");
-				break; 
-			case 1: note.push_back("←");
-				break;
-			case 2: note.push_back("→");
-				break;
-			case 3: note.push_back("↓");
-				break;
-		}
-	}
+    while (queue.size())
+    {
+        cout << queue.front() << endl;
+        queue.pop();
+    }
 
-	for (int i = 0; i < note.size(); i++)
-	{
-		cout << note[i] << " ";
-	}
+ 
 
 #pragma endregion
-
 
 
 	return 0;
