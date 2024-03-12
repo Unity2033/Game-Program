@@ -19,10 +19,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <VCProjectVersion>16.0</VCProjectVersion>
+    <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{8fe462ff-c4e7-4a37-8a78-73752e17133c}</ProjectGuid>
-    <RootNamespace>Solution</RootNamespace>
+    <ProjectGuid>{28d2f668-2390-411a-b8df-202e15975398}</ProjectGuid>
+    <RootNamespace>Program</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,47 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Bank.cpp" />
-    <ClCompile Include="Camera.cpp" />
-    <ClCompile Include="Component.cpp" />
-    <ClCompile Include="Computer.cpp" />
-    <ClCompile Include="Firebat.cpp" />
-    <ClCompile Include="Ghost.cpp" />
-    <ClCompile Include="Goliath.cpp" />
-    <ClCompile Include="InputKey.cpp" />
-    <ClCompile Include="Inventory.cpp" />
-    <ClCompile Include="Item.cpp" />
-    <ClCompile Include="Keyboard.cpp" />
-    <ClCompile Include="LinkedList.cpp" />
-    <ClCompile Include="Marine.cpp" />
-    <ClCompile Include="Mechanic.cpp" />
-    <ClCompile Include="Mouse.cpp" />
-    <ClCompile Include="Player.cpp" />
-    <ClCompile Include="SigueTank.cpp" />
-    <ClCompile Include="Solution.cpp" />
-    <ClCompile Include="Vulture.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="(2023.10.5) 연관 컨테이너.h" />
-    <ClInclude Include="Bank.h" />
-    <ClInclude Include="Camera.h" />
-    <ClInclude Include="Component.h" />
-    <ClInclude Include="Computer.h" />
-    <ClInclude Include="Firebat.h" />
-    <ClInclude Include="Ghost.h" />
-    <ClInclude Include="Goliath.h" />
-    <ClInclude Include="InputKey.h" />
-    <ClInclude Include="Inventory.h" />
-    <ClInclude Include="Item.h" />
-    <ClInclude Include="Keyboard.h" />
-    <ClInclude Include="LinkedList.h" />
-    <ClInclude Include="Marine.h" />
-    <ClInclude Include="Mechanic.h" />
-    <ClInclude Include="Mouse.h" />
-    <ClInclude Include="Player.h" />
-    <ClInclude Include="SigueTank.h" />
-    <ClInclude Include="Unit.h" />
-    <ClInclude Include="Vulture.h" />
+    <ClCompile Include="Program.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
