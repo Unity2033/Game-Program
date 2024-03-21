@@ -17,6 +17,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class5th (Linear Queue)", "
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class6th (Circle Queue)", "..\Class6th (Circle Queue)\Class6th (Circle Queue).vcxproj", "{9153D7C6-AFC0-4AAF-8438-1F0C50BEAC2B}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class7th (Operator Overloading)", "..\Class7th (Operator Overloading)\Class7th (Operator Overloading).vcxproj", "{B9E6058B-C222-4A6B-B8F2-C7ED2CE1649A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -81,6 +83,14 @@ Global
 		{9153D7C6-AFC0-4AAF-8438-1F0C50BEAC2B}.Release|x64.Build.0 = Release|x64
 		{9153D7C6-AFC0-4AAF-8438-1F0C50BEAC2B}.Release|x86.ActiveCfg = Release|Win32
 		{9153D7C6-AFC0-4AAF-8438-1F0C50BEAC2B}.Release|x86.Build.0 = Release|Win32
+		{B9E6058B-C222-4A6B-B8F2-C7ED2CE1649A}.Debug|x64.ActiveCfg = Debug|x64
+		{B9E6058B-C222-4A6B-B8F2-C7ED2CE1649A}.Debug|x64.Build.0 = Debug|x64
+		{B9E6058B-C222-4A6B-B8F2-C7ED2CE1649A}.Debug|x86.ActiveCfg = Debug|Win32
+		{B9E6058B-C222-4A6B-B8F2-C7ED2CE1649A}.Debug|x86.Build.0 = Debug|Win32
+		{B9E6058B-C222-4A6B-B8F2-C7ED2CE1649A}.Release|x64.ActiveCfg = Release|x64
+		{B9E6058B-C222-4A6B-B8F2-C7ED2CE1649A}.Release|x64.Build.0 = Release|x64
+		{B9E6058B-C222-4A6B-B8F2-C7ED2CE1649A}.Release|x86.ActiveCfg = Release|Win32
+		{B9E6058B-C222-4A6B-B8F2-C7ED2CE1649A}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
