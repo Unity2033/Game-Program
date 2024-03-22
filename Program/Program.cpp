@@ -1,119 +1,146 @@
 ﻿#include <iostream>
 
+#define SIZE 5
+
 using namespace std;
 
 template<typename T>
-class Vector
+class Stack
 {
 private:
-	int size;
-	int capacity;
-	T * bufferPointer;
+	int top;
+	T buffer[SIZE];
 
 public:
-	Vector()
+	Stack()
 	{
-		size = 0;
-		capacity = 0;
-		bufferPointer = nullptr;
+		top = -1;
+
+		for (int i = 0; i < SIZE; i++)
+		{
+			buffer[i] = NULL;
+		}
 	}
 
-	void PushBack(T data)
+	void Push(T data)
 	{
-		if (capacity == 0)
+		if (IsFull())
 		{
-			Resize(1);
-		}
-		else if(size >= capacity)
-		{
-			Resize(capacity * 2);
-		}
-
-		bufferPointer[size++] = data;
-	}
-
-	void PopBack()
-	{
-		if (size <= 0)
-		{
-			cout << "Vector is Empty" << endl;
+			cout << "Stack is Full" << endl;
 		}
 		else
 		{
-			bufferPointer[--size] = NULL;
+			buffer[++top] = data;
 		}
 	}
 
-	void Resize(int newSize)
+	T Pop()
 	{
-		// 1. capacity에 새로운 size값을 설정합니다.
-		capacity = newSize;
-
-		// 2. 새로운 포인터 변수를 생성해서 새롭게 만들어진
-		//    미모리 공간을 가리키도록 합니다.
-		T * newPointer = new T[capacity];
-
-		// 3. 새로운 메모리 공간의 값을 초기화합니다.
-		for (int i = 0; i < capacity; i++)
+		if (Empty())
 		{
-			newPointer[i] = NULL;
+			cout << "Stack is Empty" << endl;
 		}
-
-		// 4. 기존 배열에 있는 값을 복사해서 새로운 배열에
-		//    넣어줍니다.
-		for (int i = 0; i < size; i++)
+		else
 		{
-			newPointer[i] = bufferPointer[i];
+			return buffer[top--];
 		}
-
-		// 5. bufferPointer의 메모리 주소를 해제합니다.
-		if (bufferPointer != nullptr)
-		{
-			delete [ ] bufferPointer;
-		}
-
-		// 6. bufferPointer에 새로운 메모리 주소를 저장합니다.
-		bufferPointer = newPointer;
 	}
 
-	void Reserve(int newSize)
+	bool Empty()
 	{
-		if (newSize < capacity)
+		if (top <= -1)
 		{
-			return;
+			return true;
 		}
-
-		Resize(newSize);
-	}
-
-	T & operator[](const int & index)
-	{
-		return bufferPointer[index];
-	}
-
-	int& Size()
-	{
-		return size;
-	}
-
-	~Vector()
-	{
-		if (bufferPointer != nullptr)
+		else
 		{
-			delete[] bufferPointer;
+			return false;
 		}
 	}
+
+	bool IsFull()
+	{
+		if (SIZE - 1 <= top)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+
+	T & Top()
+	{
+		return buffer[top];
+	}
+
 };
+
+bool CheckBracket(string content)
+{
+	Stack<char> stack;
+
+	for (int i = 0; i < content.length(); i++)
+	{
+		char character = content[i];
+
+		if (character == '(' || character == '{' || character == '[')
+		{
+			stack.Push(character);
+		}
+		else if (character == ')' || character == '}' || character == ']')
+		{
+			char alphabet = stack.Pop();
+
+			if (alphabet == '(' && character != ')')
+			{
+				return false;
+			}
+
+			if (alphabet == '{' && character != '}')
+			{
+				return false;
+			}
+
+			if (alphabet == '[' && character != ']')
+			{
+				return false;
+			}
+		}
+	}
+
+	if (stack.Empty())
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+
+}
 
 int main()
 {
-	Vector<int> vector;
+	Stack<int> stack;
 
-	vector.PushBack(10);
-	vector.PushBack(20);
+	/*stack.Push(10);
+	stack.Push(20);
+	stack.Push(30);
+	stack.Push(40);
+	stack.Push(50);
+
+	while (stack.Empty() == false)
+	{
+		cout << stack.Top() << endl;
+		stack.Pop();
+	}*/
 
 
-	cout << vector[0];
+    bool flag = CheckBracket("({[]})");
+
+	cout << "flag 변수의 값 : " << flag << endl;
 
 	return 0;
 }
