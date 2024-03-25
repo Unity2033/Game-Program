@@ -1,146 +1,93 @@
 ﻿#include <iostream>
 
-#define SIZE 5
-
 using namespace std;
 
-template<typename T>
-class Stack
+struct Node
 {
-private:
-	int top;
-	T buffer[SIZE];
-
-public:
-	Stack()
-	{
-		top = -1;
-
-		for (int i = 0; i < SIZE; i++)
-		{
-			buffer[i] = NULL;
-		}
-	}
-
-	void Push(T data)
-	{
-		if (IsFull())
-		{
-			cout << "Stack is Full" << endl;
-		}
-		else
-		{
-			buffer[++top] = data;
-		}
-	}
-
-	T Pop()
-	{
-		if (Empty())
-		{
-			cout << "Stack is Empty" << endl;
-		}
-		else
-		{
-			return buffer[top--];
-		}
-	}
-
-	bool Empty()
-	{
-		if (top <= -1)
-		{
-			return true;
-		}
-		else
-		{
-			return false;
-		}
-	}
-
-	bool IsFull()
-	{
-		if (SIZE - 1 <= top)
-		{
-			return true;
-		}
-		else
-		{
-			return false;
-		}
-	}
-
-	T & Top()
-	{
-		return buffer[top];
-	}
-
+	int data;
+	Node * left;
+	Node * right;
 };
 
-bool CheckBracket(string content)
+Node * CreateNode(int data, Node * left, Node * right)
 {
-	Stack<char> stack;
+	// 1. 새로운 노드를 생성합니다.
+	Node * newNode = new Node;
 
-	for (int i = 0; i < content.length(); i++)
+	// 2. 새로운 노드의 data 값을 저장합니다.
+	newNode->data = data;
+
+	// 3. 새로운 노드의 left 값을 저장합니다.
+	newNode->left = left;
+
+	// 4. 새로운 노드의 right 값을 저장합니다.
+	newNode->right = right;
+
+	// 5. 새로운 노드의 주솟값을 반환합니다.
+	return newNode;
+}
+
+// 전위 순회
+// 1. Root Node를 방문합니다.
+// 2. 왼쪽 서브 트리를 전위 순회합니다.
+// 3. 오른쪽 서브 트리를 전위 순회합니다.
+void Preorder(Node * root)
+{
+	if (root != nullptr)
 	{
-		char character = content[i];
-
-		if (character == '(' || character == '{' || character == '[')
-		{
-			stack.Push(character);
-		}
-		else if (character == ')' || character == '}' || character == ']')
-		{
-			char alphabet = stack.Pop();
-
-			if (alphabet == '(' && character != ')')
-			{
-				return false;
-			}
-
-			if (alphabet == '{' && character != '}')
-			{
-				return false;
-			}
-
-			if (alphabet == '[' && character != ']')
-			{
-				return false;
-			}
-		}
+		cout << root->data << " ";
+		Preorder(root->left);
+		Preorder(root->right);
 	}
+}
 
-	if (stack.Empty())
+// 중위 순회
+// 1. 왼쪽 서브 트리를 전위 순회합니다.
+// 2. Root Node를 방문합니다.
+// 3. 오른쪽 서브 트리를 전위 순회합니다.
+void Inorder(Node * root)
+{
+	if (root != nullptr)
 	{
-		return true;
+		Inorder(root->left);
+		cout << root->data << " ";
+		Inorder(root->right);
 	}
-	else
-	{
-		return false;
-	}
+}
 
+// 후위 순회
+// 1. Root Node를 방문합니다.
+// 2. 왼쪽 서브 트리를 전위 순회합니다.
+// 3. 오른쪽 서브 트리를 전위 순회합니다.
+void Postorder(Node * root)
+{
+	if (root != nullptr)
+	{
+		Postorder(root->left);
+		Postorder(root->right);
+		cout << root->data << " ";
+	}
 }
 
 int main()
 {
-	Stack<int> stack;
+	Node * node7 = CreateNode(7, nullptr, nullptr);
+	Node * node6 = CreateNode(6, nullptr, nullptr);
+	Node * node5 = CreateNode(5, nullptr, nullptr);
+	Node * node4 = CreateNode(4, nullptr, nullptr);
+	Node * node3 = CreateNode(3, node6, node7);
+	Node * node2 = CreateNode(2, node4, node5);
+	Node * node1 = CreateNode(1, node2, node3);
 
-	/*stack.Push(10);
-	stack.Push(20);
-	stack.Push(30);
-	stack.Push(40);
-	stack.Push(50);
+	Preorder(node1);
 
-	while (stack.Empty() == false)
-	{
-		cout << stack.Top() << endl;
-		stack.Pop();
-	}*/
+	cout << endl;
 
+	Inorder(node1);
 
-    bool flag = CheckBracket("({[]})");
+	cout << endl;
 
-	cout << "flag 변수의 값 : " << flag << endl;
+	Postorder(node1);
 
 	return 0;
 }
