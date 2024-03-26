@@ -1,93 +1,87 @@
 ﻿#include <iostream>
 
+#define SIZE 8
+
 using namespace std;
 
-struct Node
+template <typename T>
+class Heap
 {
-	int data;
-	Node * left;
-	Node * right;
+private :
+	T buffer[SIZE];
+	int index;
+
+public :
+	Heap()
+	{
+		for (int i = 0; i < SIZE; i++)
+		{
+			buffer[i] = NULL;
+		}
+
+		index = 0;
+	}
+
+	void Insert(T data)
+	{
+		if (index >= SIZE - 1)
+		{
+			cout << "Heap is Full" << endl;
+			return;
+		}
+
+		buffer[++index] = data;
+
+		int child = index;
+		int parent = index / 2;
+
+		while (child > 1)
+		{
+			// 자식 노드와 부모 노드의 데이터를 비교합니다.
+			if (buffer[parent] < buffer[child])
+			{
+				swap(buffer[parent], buffer[child]);
+			}
+
+			child = parent;
+			parent = child / 2;
+		}
+	}
+
+	T & Delete()
+	{
+		// 1. Heap이 비어있다면 프로그램을 종료합니다.
+		if (index <= 0)
+		{
+			cout << "Heap is Empty" << endl;
+			exit(1);
+		}
+
+		// 2. 임시 변수에 buffer[1] 값을 보관합니다.
+		T result = buffer[1];
+
+		// 3. index로 가리키는 배열의 값을 첫 번째 원소에 넣어줍니다.
+		buffer[1] = buffer[index];
+
+		// 4. index로 가리키는 배열의 값을 초기화합니다.
+		buffer[index] = NULL:
+
+		// 5. index의 값을 감소합니다.
+		index--;
+
+	}
+
+	void Show()
+	{
+		for (T element : buffer)
+		{
+			cout << element << " ";
+		}
+	}
 };
-
-Node * CreateNode(int data, Node * left, Node * right)
-{
-	// 1. 새로운 노드를 생성합니다.
-	Node * newNode = new Node;
-
-	// 2. 새로운 노드의 data 값을 저장합니다.
-	newNode->data = data;
-
-	// 3. 새로운 노드의 left 값을 저장합니다.
-	newNode->left = left;
-
-	// 4. 새로운 노드의 right 값을 저장합니다.
-	newNode->right = right;
-
-	// 5. 새로운 노드의 주솟값을 반환합니다.
-	return newNode;
-}
-
-// 전위 순회
-// 1. Root Node를 방문합니다.
-// 2. 왼쪽 서브 트리를 전위 순회합니다.
-// 3. 오른쪽 서브 트리를 전위 순회합니다.
-void Preorder(Node * root)
-{
-	if (root != nullptr)
-	{
-		cout << root->data << " ";
-		Preorder(root->left);
-		Preorder(root->right);
-	}
-}
-
-// 중위 순회
-// 1. 왼쪽 서브 트리를 전위 순회합니다.
-// 2. Root Node를 방문합니다.
-// 3. 오른쪽 서브 트리를 전위 순회합니다.
-void Inorder(Node * root)
-{
-	if (root != nullptr)
-	{
-		Inorder(root->left);
-		cout << root->data << " ";
-		Inorder(root->right);
-	}
-}
-
-// 후위 순회
-// 1. Root Node를 방문합니다.
-// 2. 왼쪽 서브 트리를 전위 순회합니다.
-// 3. 오른쪽 서브 트리를 전위 순회합니다.
-void Postorder(Node * root)
-{
-	if (root != nullptr)
-	{
-		Postorder(root->left);
-		Postorder(root->right);
-		cout << root->data << " ";
-	}
-}
 
 int main()
 {
-	Node * node7 = CreateNode(7, nullptr, nullptr);
-	Node * node6 = CreateNode(6, nullptr, nullptr);
-	Node * node5 = CreateNode(5, nullptr, nullptr);
-	Node * node4 = CreateNode(4, nullptr, nullptr);
-	Node * node3 = CreateNode(3, node6, node7);
-	Node * node2 = CreateNode(2, node4, node5);
-	Node * node1 = CreateNode(1, node2, node3);
-
-	Preorder(node1);
-
-	cout << endl;
-
-	Inorder(node1);
-
-	cout << endl;
-
-	Postorder(node1);
 
 	return 0;
 }
