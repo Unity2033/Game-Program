@@ -41,10 +41,85 @@ public:
 		return hashIndex;
 	}
 
-	// HashFunction 템플릿 특수화
+	template<>
+	int HashFunction(string key)
+	{
+		int result = 0;
 
+		for (const char & element : key)
+		{
+			result += (int)element;
+		}
 
+		int hashIndex = result % SIZE;
 
+		return hashIndex;
+	}
+	
+	Node * CreateNode(KEY key, VALUE value)
+	{
+		Node * newNode = new Node;
+
+		newNode->key = key;
+
+		newNode->value = value;
+
+		newNode->next = nullptr;
+
+		return newNode;
+	}
+
+	void Insert(KEY key, VALUE value)
+	{
+		// 해시 함수를 통해서 값을 받는 임시 변수
+		int hashIndex = HashFunction(key);
+
+		// 새로운 노드를 생성합니다.
+		Node * newNode = CreateNode(key, value);
+
+		// 노드가 1개라도 존재하지 않는다면
+		if (bucket[hashIndex].count == 0)
+		{
+		    // 1. bucket[hashIndex]의 head 포인터에 새로운 노드를 저장합니다.
+			bucket[hashIndex].head = newNode;
+
+			// 2. bucket[hashIndex]의 count 변수의 값을 증가시킵니다.
+			bucket[hashIndex].count++;
+		}
+		else // 노드가 1개라도 존재한다면
+		{
+			// 1. newNode의 next에 bucket[hashIndex]의 head값을 저장합니다.
+			newNode->next = bucket[hashIndex].head;
+
+			// 2. bucket[hashIndex].head를 방금 새로 생성한 노드의 주소를 가리키게 합니다.
+			bucket[hashIndex].head = newNode;
+
+			// 3. bucket[hashIndex]의 count 변수의 값을 증가시킵니다.
+			bucket[hashIndex].count++;
+		}
+	}
+
+	void Remove(KEY key)
+	{
+
+	}
+
+	void Show()
+	{
+		for (int i = 0; i < SIZE; i++)
+		{
+			Node* currentNode = bucket[i].head;
+
+			while (currentNode != nullptr)
+			{
+				cout << "[" << i << "]" << "KEY : " << currentNode->key << " VALUE : " << currentNode->value << " ";
+				currentNode = currentNode->next;
+			}
+
+			cout << endl;
+		}
+
+	}
 };
 
 int main()
@@ -75,6 +150,16 @@ int main()
 	// 이중 해싱 : 해시 값을 한번 더 해시 함수에서 다른 함수를
 	// 도출하는 방식입니다.
 #pragma endregion
+
+	HashTable<int, string> hashTable;
+
+	hashTable.Insert(10, "Soccer");
+	hashTable.Insert(27, "BaseBall");
+	hashTable.Insert(14, "Tennis");
+	hashTable.Insert(97, "BasketBall");
+	hashTable.Insert(99, "Swimming");
+
+	hashTable.Show();
 
 
 
