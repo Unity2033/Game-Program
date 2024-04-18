@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 
 using namespace std;
 
@@ -16,7 +16,6 @@ private:
 	Node* root;
 
 public:
-
 	BinarySearchTree()
 	{
 		root = nullptr;
@@ -208,9 +207,26 @@ public:
 			currentNode->data = childNode->data;
 
 			delete childNode;
+  
+			return;
 		}
 
 		delete currentNode;
+	}
+
+	void Destroy(Node * root)
+	{
+		if (root != nullptr)
+		{
+			Destroy(root->left);
+			Destroy(root->right);
+			delete root;
+		}
+	}
+
+	~BinarySearchTree()
+	{
+		Destroy(root);
 	}
 };
 
