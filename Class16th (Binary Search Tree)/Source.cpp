@@ -48,8 +48,7 @@ public:
 				if (currentNode->data == data)
 				{
 					return;
-				}
-				// 내가 삽입하고자 하는 값이 root 값보다 작은 경우
+				}		
 				else if (currentNode->data > data)
 				{
 					if (currentNode->left == nullptr)
@@ -62,7 +61,7 @@ public:
 						currentNode = currentNode->left;
 					}
 				}
-				else // 내가 삽입하고자 하는 값이 root 값보다 큰 경우
+				else 
 				{
 					if (currentNode->right == nullptr)
 					{
@@ -140,7 +139,7 @@ public:
 			return;
 		}
 
-		// Case 1: 삭제하려는 노드가 리프 노드인 경우
+		// Case 1: ??��?�려???�드가 리프 ?�드??경우
 		if (currentNode->left == nullptr && currentNode->right == nullptr)
 		{
 			if (parentNode != nullptr)
@@ -159,7 +158,7 @@ public:
 				root = nullptr;
 			}
 		}
-		else if (currentNode->left == nullptr || currentNode->right == nullptr) // Case 2: 삭제하려는 노드가 자식이 1개인 경우
+		else if (currentNode->left == nullptr || currentNode->right == nullptr) // Case 2: ??��?�려???�드가 ?�식??1개인 경우
 		{
 			Node* childNode = nullptr;
 
@@ -233,10 +232,10 @@ public:
 
 int main()
 {
-#pragma region 이진 탐색 트리
-	// 한 노드에 대해 왼쪽/오른쪽의 (최대) 두 개의 자식을 가질 수 있는 트리이며,
-	// 왼쪽 자식은 부모 노드보다 작은 값을, 오른쪽 자식은 부모 노드보다 큰 값을
-	// 가지는 탐색 트리입니다.
+#pragma region ?�진 ?�색 ?�리
+	// ???�드???�???�쪽/?�른쪽의 (최�?) ??개의 ?�식??가�????�는 ?�리?�며,
+	// ?�쪽 ?�식?� 부�??�드보다 ?��? 값을, ?�른�??�식?� 부�??�드보다 ??값을
+	// 가지???�색 ?�리?�니??
 
 	BinarySearchTree<int> binarySearchTree;
 
