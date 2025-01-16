@@ -61,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Class3th (Script)\Scripts\Sphere.cs" />
+    <Compile Include="Assets\Class4th (Input System)\Scripts\Keyboard.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Class1th (Interface)\Ladymito\Free_cat\Animations\low_poly_cat_animation_list.txt" />
