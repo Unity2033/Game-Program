@@ -62,6 +62,7 @@
   <ItemGroup>
     <Compile Include="Assets\Class6th (Prefab System)\Scripts\Function.cs" />
     <Compile Include="Assets\Class3th (Script)\Scripts\Sphere.cs" />
+    <Compile Include="Assets\Class7th (User Interface)\Scripts\ButtonManager.cs" />
     <Compile Include="Assets\Class4th (Input System)\Scripts\Keyboard.cs" />
   </ItemGroup>
   <ItemGroup>
