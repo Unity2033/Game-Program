@@ -61,11 +61,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Class8th (Instantiate &amp; Destroy)\Scripts\Wraith.cs" />
+    <Compile Include="Assets\Class9th (Collision)\Scripts\VolleyBall.cs" />
     <Compile Include="Assets\Class6th (Prefab System)\Scripts\Function.cs" />
+    <Compile Include="Assets\Class9th (Collision)\Scripts\SoccerBall.cs" />
     <Compile Include="Assets\Class8th (Instantiate &amp; Destroy)\Scripts\CreateManager.cs" />
     <Compile Include="Assets\Class3th (Script)\Scripts\Sphere.cs" />
+    <Compile Include="Assets\Class9th (Collision)\Scripts\BasketBall.cs" />
     <Compile Include="Assets\Class9th (Collision)\Scripts\BilliardBall.cs" />
     <Compile Include="Assets\Class7th (User Interface)\Scripts\ButtonManager.cs" />
+    <Compile Include="Assets\Class9th (Collision)\Scripts\InterfaceManager.cs" />
     <Compile Include="Assets\Class4th (Input System)\Scripts\Keyboard.cs" />
     <Compile Include="Assets\Class7th (User Interface)\Scripts\Select.cs" />
   </ItemGroup>

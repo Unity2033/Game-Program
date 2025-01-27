@@ -40,7 +40,12 @@ public class BilliardBall : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("OnCollisionEnter");
+        IDamageable damageable = collision.gameObject.GetComponent<IDamageable>();
+
+        if (damageable != null) 
+        {
+            damageable.Use();
+        }
     }
 
     private void OnCollisionStay(Collision collision)
