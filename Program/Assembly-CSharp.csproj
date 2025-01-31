@@ -65,6 +65,7 @@
     <Compile Include="Assets\Class6th (Prefab System)\Scripts\Function.cs" />
     <Compile Include="Assets\Class9th (Collision)\Scripts\SoccerBall.cs" />
     <Compile Include="Assets\Class8th (Instantiate &amp; Destroy)\Scripts\CreateManager.cs" />
+    <Compile Include="Assets\Class10th (Ray Cast)\Scripts\Information.cs" />
     <Compile Include="Assets\Class3th (Script)\Scripts\Sphere.cs" />
     <Compile Include="Assets\Class9th (Collision)\Scripts\BasketBall.cs" />
     <Compile Include="Assets\Class9th (Collision)\Scripts\BilliardBall.cs" />
