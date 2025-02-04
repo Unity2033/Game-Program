@@ -62,7 +62,9 @@
   <ItemGroup>
     <Compile Include="Assets\Class8th (Instantiate &amp; Destroy)\Scripts\Wraith.cs" />
     <Compile Include="Assets\Class9th (Collision)\Scripts\VolleyBall.cs" />
+    <Compile Include="Assets\Class11th (Sound System)\Scripts\AudioManager.cs" />
     <Compile Include="Assets\Class10th (Ray Cast)\Scripts\View.cs" />
+    <Compile Include="Assets\Class11th (Sound System)\Scripts\Sound.cs" />
     <Compile Include="Assets\Class6th (Prefab System)\Scripts\Function.cs" />
     <Compile Include="Assets\Class9th (Collision)\Scripts\SoccerBall.cs" />
     <Compile Include="Assets\Class8th (Instantiate &amp; Destroy)\Scripts\CreateManager.cs" />
