@@ -466,7 +466,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41d4c400e557bba4aa184bd2a4d7c1dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 0}
+  audioSource: {fileID: 797974305}
 --- !u!4 &1286716944
 Transform:
   m_ObjectHideFlags: 0
@@ -560,6 +560,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f4304f3b8449b84f94a1c7a05f131b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  seed: 0
   audioClip: {fileID: 8300000, guid: b7b5a6156961bac44a67504d42ce6fcf, type: 3}
 --- !u!1001 &1867612781
 PrefabInstance:
@@ -638,6 +639,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f4304f3b8449b84f94a1c7a05f131b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  seed: 0
   audioClip: {fileID: 8300000, guid: 7c47b20bb9874304a809dc5580d403ba, type: 3}
 --- !u!1001 &2104145278
 PrefabInstance:
@@ -716,6 +718,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f4304f3b8449b84f94a1c7a05f131b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  seed: 0
   audioClip: {fileID: 8300000, guid: 2b21ef916f6943c439b71a7c74568878, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
