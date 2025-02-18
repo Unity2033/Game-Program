@@ -14,12 +14,14 @@ public class Runner : MonoBehaviour
     [SerializeField] float positionX = 4.0f;
 
     [SerializeField] RoadLine roadLine;
+    [SerializeField] Animator animator;
     [SerializeField] Rigidbody rigidBody;
 
     void Start()
     {
         roadLine = RoadLine.MIDDLE;
 
+        animator = GetComponent<Animator>();
         rigidBody = GetComponent<Rigidbody>();
     }
 
@@ -40,6 +42,8 @@ public class Runner : MonoBehaviour
             if (roadLine != RoadLine.LEFT)
             {
                 roadLine--;
+
+                animator.Play("Left Avoid");
             }
         }
 
@@ -48,6 +52,8 @@ public class Runner : MonoBehaviour
             if (roadLine != RoadLine.RIGHT)
             {
                 roadLine++;
+
+                animator.Play("Right Avoid");
             }
         }
     }
