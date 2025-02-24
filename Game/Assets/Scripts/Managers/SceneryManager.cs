@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -12,6 +13,26 @@ public class SceneryManager : Singleton<SceneryManager>
     private void OnEnable()
     {
         SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    public IEnumerator FadeIn()
+    {
+        Color color = screenImage.color;
+
+        color.a = 1f;
+
+        screenImage.gameObject.SetActive(true);
+
+        while(color.a >= 0.0f)
+        {
+            color.a -= Time.deltaTime;
+
+            screenImage.color = color;
+
+            yield return null;
+        }
+
+        screenImage.gameObject.SetActive(false);
     }
 
     public IEnumerator AsyncLoad(int index)
@@ -59,7 +80,7 @@ public class SceneryManager : Singleton<SceneryManager>
 
     void OnSceneLoaded(Scene scene,LoadSceneMode loadSceneMode)
     {
-
+        StartCoroutine(FadeIn());
     }
 
     private void OnDisable()

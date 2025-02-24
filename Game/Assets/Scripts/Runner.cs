@@ -18,17 +18,17 @@ public class Runner : MonoBehaviour
     [SerializeField] Animator animator;
     [SerializeField] Rigidbody rigidBody;
 
+    private void OnEnable()
+    {
+        InputManager.Instance.action += OnKeyUpdate;
+    }
+
     void Start()
     {
         roadLine = RoadLine.MIDDLE;
 
         animator = GetComponent<Animator>();
         rigidBody = GetComponent<Rigidbody>();
-    }
-
-    void Update()
-    {
-        OnKeyUpdate();
     }
 
     private void FixedUpdate()
@@ -71,5 +71,10 @@ public class Runner : MonoBehaviour
              new Vector3(positionX * (int)roadLine, 0, 0),
              speed * Time.deltaTime
         );
+    }
+
+    private void OnDisable()
+    {
+        InputManager.Instance.action -= OnKeyUpdate;
     }
 }
