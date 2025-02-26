@@ -4,15 +4,27 @@ using UnityEngine;
 
 public class ObstacleManager : MonoBehaviour
 {
-    // Start is called before the first frame update
+    [SerializeField] int createCount = 5;
+    [SerializeField] List<GameObject> obstacles;
+
+    [SerializeField] List<string> obstacleNames;
+
     void Start()
     {
-        
+        Create();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Create()
     {
-        
+        obstacles.Capacity = 10;
+
+        for(int i = 0; i < createCount; i++)
+        {
+            GameObject prefab = ResourcesManager.Instance.Instantiate(obstacleNames[Random.Range(0, obstacleNames.Count)]);
+
+            prefab.SetActive(false);
+
+            obstacles.Add(prefab);
+        }
     }
 }
