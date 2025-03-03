@@ -73,7 +73,12 @@ public class ObstacleManager : MonoBehaviour
             }
 
             // 랜덤으로 설정된 Obstacle 오브젝트를 활성화합니다.
-            obstacles[random].SetActive(true);
+            // obstacles[random].SetActive(true);
         }
+    }
+
+    public GameObject GetObstacle()
+    {
+        return obstacles[random];
     }
 }

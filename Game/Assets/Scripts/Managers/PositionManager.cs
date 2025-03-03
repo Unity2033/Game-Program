@@ -4,8 +4,13 @@ using UnityEngine;
 
 public class PositionManager : MonoBehaviour
 {
+    [SerializeField] Coroutine coroutine;
+
     [SerializeField] int index = -1;
     [SerializeField] Transform [ ] parentRoads;
+    [SerializeField] Transform [ ] positionRandomX;
+
+    [SerializeField] ObstacleManager obstacleManager;
     [SerializeField] float [ ] randomPositionZ = new float[16];
 
     private void Awake()
@@ -16,8 +21,29 @@ public class PositionManager : MonoBehaviour
         }
     }
 
+    public IEnumerator SetPosition()
+    {
+        while(true)
+        {
+            yield return new WaitForSeconds(2.5f);
+
+            transform.localPosition = new Vector3(0, 0, randomPositionZ[Random.Range(0, randomPositionZ.Length)]);
+
+            obstacleManager.GetObstacle().SetActive(true);
+
+            obstacleManager.GetObstacle().transform.position = positionRandomX[Random.Range(0, positionRandomX.Length)].position;
+
+            obstacleManager.GetObstacle().transform.SetParent(transform.root.GetChild(index));
+        }
+    }
+
     public void InitializePosition()
     {
+        if(coroutine == null)
+        {
+            coroutine = StartCoroutine(SetPosition());
+        }
+
         index = (index + 1) % parentRoads.Length;
 
         transform.SetParent(parentRoads[index]);
