@@ -9,6 +9,7 @@ using UnityEngine.UI;
 public class SceneryManager : Singleton<SceneryManager>
 {
     [SerializeField] Image screenImage;
+    [SerializeField] AudioClip audioClip;
 
     private void OnEnable()
     {
@@ -37,6 +38,8 @@ public class SceneryManager : Singleton<SceneryManager>
 
     public IEnumerator AsyncLoad(int index)
     {
+        AudioManager.Instance.Listen(audioClip);
+
         screenImage.gameObject.SetActive(true);
 
         // <asyncOperation.allowSceneActivation>

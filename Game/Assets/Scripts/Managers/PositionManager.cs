@@ -23,7 +23,7 @@ public class PositionManager : MonoBehaviour
 
     public IEnumerator SetPosition()
     {
-        while(true)
+        while(GameManager.Instance.State)
         {
             yield return new WaitForSeconds(2.5f);
 
