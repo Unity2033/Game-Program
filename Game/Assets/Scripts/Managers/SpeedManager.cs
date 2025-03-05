@@ -7,8 +7,6 @@ public class SpeedManager : MonoBehaviour
     [SerializeField] static float speed;
     [SerializeField] float limitSpeed = 50.0f;
 
-    WaitForSeconds waitForSeconds = new WaitForSeconds(2.5f);
-
     public static float Speed
     {  
         get { return speed; } 
@@ -25,7 +23,7 @@ public class SpeedManager : MonoBehaviour
     {
         while(GameManager.Instance.State && speed < limitSpeed)
         {
-            yield return waitForSeconds;
+            yield return CoroutineCache.WaitForSecond(2.5f);
 
             speed += 2;
         }
