@@ -1,9 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class SpeedManager : MonoBehaviour
 {
+    [SerializeField] UnityEvent callback;
+
     [SerializeField] static float speed;
     [SerializeField] float limitSpeed = 50.0f;
 
@@ -24,6 +27,11 @@ public class SpeedManager : MonoBehaviour
         while(GameManager.Instance.State && speed < limitSpeed)
         {
             yield return CoroutineCache.WaitForSecond(2.5f);
+
+            if (callback != null)
+            {
+                callback.Invoke();
+            }
 
             speed += 2;
         }

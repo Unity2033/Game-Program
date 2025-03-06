@@ -82,6 +82,12 @@ public class Runner : MonoBehaviour
         animator.Play("Die");
     }
 
+    public void Synchoronization()
+    {
+        animator.speed = SpeedManager.Speed / 20;
+        Debug.Log(animator.speed);
+    }
+
     private void OnDisable()
     {
         InputManager.Instance.action -= OnKeyUpdate;
