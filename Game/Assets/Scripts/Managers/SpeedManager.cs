@@ -8,7 +8,7 @@ public class SpeedManager : MonoBehaviour
     [SerializeField] UnityEvent callback;
 
     [SerializeField] static float speed;
-    [SerializeField] float limitSpeed = 50.0f;
+    [SerializeField] float limitSpeed = 60.0f;
 
     public static float Speed
     {  
@@ -17,7 +17,7 @@ public class SpeedManager : MonoBehaviour
 
     private void Awake()
     {
-        speed = 20.0f;
+        speed = 30.0f;
 
         StartCoroutine(Increase());
     }
@@ -26,7 +26,7 @@ public class SpeedManager : MonoBehaviour
     {
         while(GameManager.Instance.State && speed < limitSpeed)
         {
-            yield return CoroutineCache.WaitForSecond(2.5f);
+            yield return CoroutineCache.WaitForSecond(TimeManager.Instance.IncreaseTime);
 
             if (callback != null)
             {

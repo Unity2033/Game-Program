@@ -84,8 +84,7 @@ public class Runner : MonoBehaviour
 
     public void Synchoronization()
     {
-        animator.speed = SpeedManager.Speed / 20;
-        Debug.Log(animator.speed);
+        animator.speed = SpeedManager.Speed / 30;
     }
 
     private void OnDisable()
