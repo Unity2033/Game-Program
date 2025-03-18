@@ -568,7 +568,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 721813029}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1495842430}
+        m_TargetAssemblyTypeName: RoomManager, Assembly-CSharp
+        m_MethodName: OnCreateRoom
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &721813029
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -671,7 +683,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 3
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 0
     m_HorizontalOverflow: 1
@@ -1183,9 +1195,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62675fa5c6631444f92cce3e929d24e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  titleInputField: {fileID: 0}
-  capacityInputField: {fileID: 0}
-  parentTransform: {fileID: 0}
+  titleInputField: {fileID: 1763631563}
+  capacityInputField: {fileID: 1696171376}
+  parentTransform: {fileID: 1649837258}
 --- !u!4 &1495842431
 Transform:
   m_ObjectHideFlags: 0
