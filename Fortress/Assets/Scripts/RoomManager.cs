@@ -18,6 +18,8 @@ public class RoomManager : MonoBehaviourPunCallbacks
     {
         if(PhotonNetwork.InLobby == false)
         {
+            Debug.Log(PhotonNetwork.InLobby);
+
             PhotonNetwork.JoinLobby();
         }
     }
@@ -42,6 +44,8 @@ public class RoomManager : MonoBehaviourPunCallbacks
 
     public override void OnRoomListUpdate(List<RoomInfo> roomList)
     {
+        Debug.Log(roomList.Count);
+
         GameObject prefab = null;
 
         foreach(RoomInfo room in roomList) 
