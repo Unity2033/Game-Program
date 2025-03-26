@@ -3,28 +3,18 @@ using PlayFab;
 using PlayFab.ClientModels;
 using UnityEditor.PackageManager;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class NickName : MonoBehaviourPunCallbacks
 {
-    private void Awake()
-    {
-        Information(null);
-    }
+    [SerializeField] InputField inputField;
 
-    private void Information(LoginResult result)
+    public void Confirm()
     {
-        GetAccountInfoRequest accountInfoRequest = new GetAccountInfoRequest();
+        PlayerPrefs.SetString("Name", inputField.text);
 
-        PlayFabClientAPI.GetAccountInfo(accountInfoRequest, Success, Failure);
-    }
+        PhotonNetwork.NickName = PlayerPrefs.GetString("Name");
 
-    private void Success(GetAccountInfoResult result)
-    {
-        photonView.Owner.NickName = result.AccountInfo.Username;
-    }
-
-    private void Failure(PlayFabError error)
-    {
-        Debug.LogError("Error: " + error.GenerateErrorReport());
-    }
+        gameObject.SetActive(false);
+    }    
 }
