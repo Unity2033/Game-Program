@@ -230,6 +230,7 @@ MonoBehaviour:
   rotation: {fileID: 0}
   rigidBody: {fileID: 0}
   remoteCamera: {fileID: 1278004921504038478}
+  pausePanel: {fileID: 0}
 --- !u!54 &6000395506719336847
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -252,7 +253,7 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 0
+  m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -503,7 +504,7 @@ GameObject:
   - component: {fileID: 620944680719034062}
   - component: {fileID: 2871557355342234461}
   - component: {fileID: 3313656689737167124}
-  - component: {fileID: 2104223192700118687}
+  - component: {fileID: 2403998254093976317}
   m_Layer: 5
   m_Name: Nick Name Text
   m_TagString: Untagged
@@ -572,7 +573,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 
---- !u!114 &2104223192700118687
+--- !u!114 &2403998254093976317
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -581,9 +582,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2130965466983127870}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 649fbc3ad4e81d44ebfaafb1a801dd6b, type: 3}
+  m_Script: {fileID: 11500000, guid: 85c9998ce95b7ec4e8aeece71112bf29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nickNameText: {fileID: 0}
 --- !u!1 &4321627621112582091
 GameObject:
   m_ObjectHideFlags: 0

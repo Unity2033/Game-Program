@@ -13,11 +13,15 @@ public class Character : MonoBehaviourPun
     [SerializeField] Rigidbody rigidBody;
     [SerializeField] GameObject remoteCamera;
 
+    [SerializeField] Pause pausePanel;
+ 
     private void Awake()
     {
         move = GetComponent<Move>();
         rotation = GetComponent<Rotation>();
         rigidBody = GetComponent<Rigidbody>();
+
+        pausePanel = FindObjectOfType<Pause>(true);
     }
 
     void Start()
@@ -28,6 +32,13 @@ public class Character : MonoBehaviourPun
     private void Update()
     {
         if (photonView.IsMine == false) return;
+
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            MouseManager.Instance.SetMouse(true);
+
+            pausePanel.gameObject.SetActive(true);
+        }
 
         move.OnKeyUpdate();
         rotation.OnMouseUpdate();
