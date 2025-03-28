@@ -14,13 +14,29 @@ public class RoomManager : MonoBehaviourPunCallbacks
 
     [SerializeField] Dictionary<string, GameObject> dictionary = new Dictionary<string, GameObject>();
 
-    void Start()
+    // 클라이언트가 마스터 서버에 연결되면 호출됩니다.
+    public override void OnConnectedToMaster()
     {
-        if(PhotonNetwork.InLobby == false)
-        {
-            Debug.Log(PhotonNetwork.InLobby);
+        PhotonNetwork.JoinLobby();
 
-            PhotonNetwork.JoinLobby();
+        // 연결이 완료되었으면 로비에 참가합니다.
+        Debug.Log("Connected to Master Server!");
+    }
+
+    void Update()
+    {
+        if(PhotonNetwork.InLobby)
+        {
+            Debug.Log("Lobby Connect");
+        }
+
+        if (PhotonNetwork.IsConnected)
+        {
+            Debug.Log("Client Connect.");
+        }
+        else
+        {
+            Debug.Log("Not Client Connect.");
         }
     }
 

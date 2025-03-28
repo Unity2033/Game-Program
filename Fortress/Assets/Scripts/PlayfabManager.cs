@@ -29,7 +29,7 @@ public class PlayfabManager : MonoBehaviourPunCallbacks
 
     public void Succeed(LoginResult loginResult)
     {
-        PhotonNetwork.AutomaticallySyncScene = false;
+        PhotonNetwork.AutomaticallySyncScene = true;
 
         PhotonNetwork.GameVersion = "1.0f";
 
