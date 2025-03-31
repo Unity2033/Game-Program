@@ -17,26 +17,12 @@ public class RoomManager : MonoBehaviourPunCallbacks
     // 클라이언트가 마스터 서버에 연결되면 호출됩니다.
     public override void OnConnectedToMaster()
     {
-        PhotonNetwork.JoinLobby();
-
-        // 연결이 완료되었으면 로비에 참가합니다.
-        Debug.Log("Connected to Master Server!");
-    }
-
-    void Update()
-    {
-        if(PhotonNetwork.InLobby)
+        if (PhotonNetwork.InLobby == false)
         {
-            Debug.Log("Lobby Connect");
-        }
+            PhotonNetwork.JoinLobby();
 
-        if (PhotonNetwork.IsConnected)
-        {
-            Debug.Log("Client Connect.");
-        }
-        else
-        {
-            Debug.Log("Not Client Connect.");
+            // 연결이 완료되었으면 로비에 참가합니다.
+            Debug.Log("Connected to Master Server!");
         }
     }
 

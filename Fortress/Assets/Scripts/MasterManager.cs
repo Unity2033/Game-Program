@@ -6,6 +6,10 @@ using UnityEngine;
 
 public class MasterManager : MonoBehaviourPunCallbacks
 {
+    [SerializeField] int count = 0;
+    [SerializeField] Transform [ ] transforms;
+    [SerializeField] GameObject [ ] energyList;
+
     [SerializeField] WaitForSeconds waitForSeconds = new WaitForSeconds(5.0f);
 
     void Start()
@@ -18,11 +22,13 @@ public class MasterManager : MonoBehaviourPunCallbacks
 
     IEnumerator Create()
     {
-        while(true)
+        while (true)
         {
-            if (PhotonNetwork.CurrentRoom != null)
+            if (PhotonNetwork.CurrentRoom != null && energyList[count] == null)
             {
-                PhotonNetwork.InstantiateRoomObject("Energy", Vector3.zero, Quaternion.identity);
+                energyList[count] = PhotonNetwork.InstantiateRoomObject("Energy", transforms[count].localPosition, Quaternion.identity);
+
+                count = (count + 1) % energyList.Length;
             }
 
             yield return waitForSeconds;
