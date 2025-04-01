@@ -42,4 +42,13 @@ public class MasterManager : MonoBehaviourPunCallbacks
         StartCoroutine(Create());
     }
 
+    public override void OnPlayerEnteredRoom(Player newPlayer)
+    {
+        if (PhotonNetwork.CurrentRoom.PlayerCount >= 2)
+        {
+            Debug.Log("Game Start");
+            PhotonNetwork.CurrentRoom.IsOpen = false;
+        }
+    }
+
 }
