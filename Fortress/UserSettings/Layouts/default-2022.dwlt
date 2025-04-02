@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 4456
+  controlID: 115
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 4386
+  controlID: 42
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -169,7 +169,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 4387
+  controlID: 43
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -189,8 +189,8 @@ MonoBehaviour:
     y: 0
     width: 284
     height: 584
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -271,8 +271,8 @@ MonoBehaviour:
     y: 0
     width: 491
     height: 947
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -413,23 +413,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 567b0000
+      m_SelectedIDs: 7c5f0000
       m_LastClickedID: 0
-      m_ExpandedIDs: bec1ffff68c2ffffeec2ffff7ed8ffff9ce1ffff44eeffff9af1ffffccf3ffff58f4ffffa0f4ffff26f5ffff9af7ffff1efbffffea5d00006c5e0000925e00006c7300008c7a0000
+      m_ExpandedIDs: a2a4ffffe6a4ffffccb3ffff32b4fffff4ceffff2cd0ffffb6d0ffff4ed1ffffe6d1ffff7cd4ffffe6e9ffff60ebffff3cefffff2af1ffff5cf1ffff92f1ffff0ef3ffff2afbffff1e5e0000345e0000f07e00000a7f0000147f0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: Text (Legacy)
+        m_OriginalName: Text (Legacy)
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: -19404
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 8}
       m_SearchString: 
@@ -493,10 +493,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 260
+    x: 284
     y: 73
-    width: 1048
-    height: 653
+    width: 1143
+    height: 563
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -866,7 +866,7 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: 0.052964363, y: 0.7215555, z: -0.055524435, w: 0.6881001}
     speed: 2
-    m_Value: {x: 0.052964367, y: 0.72155553, z: -0.055524435, w: 0.68810016}
+    m_Value: {x: 0.052964043, y: 0.72155106, z: -0.055524096, w: 0.6880959}
   m_Size:
     m_Target: 9.893435
     speed: 2
@@ -1010,7 +1010,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -1018,16 +1018,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Administrator\Desktop\Fortress\Fortress
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 1c5f0000
-    m_LastClickedID: 24348
-    m_ExpandedIDs: 00000000dc5e0000de5e0000e05e0000e25e0000e45e0000e65e0000e85e00000661000078720000
+    m_SelectedIDs: 5c5f0000
+    m_LastClickedID: 24412
+    m_ExpandedIDs: 000000001c5f00001e5f0000205f0000225f0000245f0000265f0000285f00002a5f00002c5f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1055,7 +1055,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000dc5e0000de5e0000e05e0000e25e0000e45e0000e65e0000e85e00000661000078720000
+    m_ExpandedIDs: 000000001c5f00001e5f0000205f0000225f0000245f0000265f0000285f00002a5f00002c5f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1131,10 +1131,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 8
-    y: 755
-    width: 1298
-    height: 252
+    x: 0
+    y: 657
+    width: 1428
+    height: 342
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0

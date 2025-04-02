@@ -7,9 +7,7 @@ using Photon.Realtime;
 
 public class RoomManager : MonoBehaviourPunCallbacks
 {
-    [SerializeField] InputField titleInputField;
-    [SerializeField] InputField capacityInputField;
-
+    [SerializeField] GameObject creatorPanel;
     [SerializeField] Transform parentTransform;
 
     [SerializeField] Dictionary<string, GameObject> dictionary = new Dictionary<string, GameObject>();
@@ -33,6 +31,9 @@ public class RoomManager : MonoBehaviourPunCallbacks
 
     public void OnCreateRoom()
     {
+        creatorPanel.SetActive(true);
+        #region RoomOption
+        /*
         RoomOptions roomOptions = new RoomOptions();
 
         roomOptions.MaxPlayers = byte.Parse(capacityInputField.text);
@@ -42,12 +43,12 @@ public class RoomManager : MonoBehaviourPunCallbacks
         roomOptions.IsVisible = true;
 
         PhotonNetwork.CreateRoom(titleInputField.text, roomOptions);
+        */
+        #endregion
     }
 
     public override void OnRoomListUpdate(List<RoomInfo> roomList)
     {
-        Debug.Log(roomList.Count);
-
         GameObject prefab = null;
 
         foreach(RoomInfo room in roomList) 
