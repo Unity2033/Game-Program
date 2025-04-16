@@ -62,6 +62,7 @@
   <ItemGroup>
     <Compile Include="Assets\Class2th (Script)\Scripts\Creature.cs" />
     <Compile Include="Assets\Class2th (Script)\Scripts\Stat.cs" />
+    <Compile Include="Assets\Class5th (Prefab System)\Scripts\Ability.cs" />
     <Compile Include="Assets\Class3th (Life Cycle)\Scripts\State.cs" />
   </ItemGroup>
   <ItemGroup>
