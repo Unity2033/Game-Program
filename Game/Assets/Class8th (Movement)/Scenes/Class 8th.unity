@@ -140,6 +140,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 757dd6fb067fb344ca37391f190d36b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  direction: {x: 0, y: 0, z: 0}
+  speed: 5
 --- !u!1001 &757235125
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -190,7 +192,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4878523198782545409, guid: b328d903f3d6cab40bdffa8df664ec95, type: 3}
       propertyPath: m_Name
-      value: aircraft-A-A
+      value: Pilot
       objectReference: {fileID: 0}
     - target: {fileID: 4878523198782545409, guid: b328d903f3d6cab40bdffa8df664ec95, type: 3}
       propertyPath: m_IsActive
