@@ -4,12 +4,16 @@ using UnityEngine;
 
 public class WeaponManager : MonoBehaviour
 {
-    [SerializeField] GameObject prefab;
+    [SerializeField] GameObject [] weapons;
+    [SerializeField] List<GameObject> weaponsList;
+
     [SerializeField] Transform parentPosition;
 
-    // Start is called before the first frame update
     void Start()
     {
-        Instantiate(prefab, parentPosition);
+        for(int i = 0; i < weapons.Length; i++)
+        {
+            // Instantiate(prefab, parentPosition);
+        }
     }
 }
