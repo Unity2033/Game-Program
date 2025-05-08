@@ -62,6 +62,7 @@
   <ItemGroup>
     <Compile Include="Assets\Class12th (Ray Cast)\Scripts\Mouse.cs" />
     <Compile Include="Assets\Class9th (Collision)\Scripts\Sensor.cs" />
+    <Compile Include="Assets\Class13th (Physics)\Scripts\Automation.cs" />
     <Compile Include="Assets\Class8th (Movement)\Scripts\Movement.cs" />
     <Compile Include="Assets\Class11th (Sound System)\Scripts\AudioManager.cs" />
     <Compile Include="Assets\Class10th (Instantiate &amp; Destroy)\Scripts\Rivolver.cs" />
