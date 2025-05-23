@@ -64,8 +64,10 @@
     <Compile Include="Assets\Scripts\Obstacle.cs" />
     <Compile Include="Assets\Scripts\ObstacleManager.cs" />
     <Compile Include="Assets\Scripts\Runner.cs" />
+    <Compile Include="Assets\Scripts\TimeManager.cs" />
     <Compile Include="Assets\Scripts\Road.cs" />
     <Compile Include="Assets\Scripts\MouseManager.cs" />
+    <Compile Include="Assets\Scripts\CoroutineCache.cs" />
     <Compile Include="Assets\Scripts\InteractZone.cs" />
     <Compile Include="Assets\Scripts\RoadManager.cs" />
   </ItemGroup>
