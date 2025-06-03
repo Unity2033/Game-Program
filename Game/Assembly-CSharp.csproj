@@ -69,6 +69,7 @@
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\State.cs" />
     <Compile Include="Assets\Scripts\TimeManager.cs" />
+    <Compile Include="Assets\Scripts\CinemachineCamera.cs" />
     <Compile Include="Assets\Scripts\Road.cs" />
     <Compile Include="Assets\Scripts\MouseManager.cs" />
     <Compile Include="Assets\Scripts\CoroutineCache.cs" />
