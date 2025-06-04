@@ -72,6 +72,7 @@
     <Compile Include="Assets\Scripts\CinemachineCamera.cs" />
     <Compile Include="Assets\Scripts\Road.cs" />
     <Compile Include="Assets\Scripts\MouseManager.cs" />
+    <Compile Include="Assets\Scripts\AudioManager.cs" />
     <Compile Include="Assets\Scripts\CoroutineCache.cs" />
     <Compile Include="Assets\Scripts\InteractZone.cs" />
     <Compile Include="Assets\Scripts\RoadManager.cs" />
