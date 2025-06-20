@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Administrator\\Desktop\\General-Class\\Photon Network Game\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7144CB18-C2DB-73D0-DD8D-F36017A1FF1D}|Assembly-CSharp.csproj|c:\\users\\administrator\\desktop\\general-class\\photon network game\\assets\\scripts\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7144CB18-C2DB-73D0-DD8D-F36017A1FF1D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7144CB18-C2DB-73D0-DD8D-F36017A1FF1D}|Assembly-CSharp.csproj|C:\\Users\\Administrator\\Desktop\\General-Class\\Photon Network Game\\assets\\scripts\\charactermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7144CB18-C2DB-73D0-DD8D-F36017A1FF1D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\charactermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7144CB18-C2DB-73D0-DD8D-F36017A1FF1D}|Assembly-CSharp.csproj|C:\\Users\\Administrator\\Desktop\\General-Class\\Photon Network Game\\assets\\scripts\\playfabmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7144CB18-C2DB-73D0-DD8D-F36017A1FF1D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playfabmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7144CB18-C2DB-73D0-DD8D-F36017A1FF1D}|Assembly-CSharp.csproj|c:\\users\\administrator\\desktop\\general-class\\photon network game\\assets\\scripts\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7144CB18-C2DB-73D0-DD8D-F36017A1FF1D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7144CB18-C2DB-73D0-DD8D-F36017A1FF1D}|Assembly-CSharp.csproj|C:\\Users\\Administrator\\Desktop\\General-Class\\Photon Network Game\\assets\\scripts\\lobbymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7144CB18-C2DB-73D0-DD8D-F36017A1FF1D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\lobbymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7144CB18-C2DB-73D0-DD8D-F36017A1FF1D}|Assembly-CSharp.csproj|C:\\Users\\Administrator\\Desktop\\General-Class\\Photon Network Game\\assets\\scripts\\information.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7144CB18-C2DB-73D0-DD8D-F36017A1FF1D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\information.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7144CB18-C2DB-73D0-DD8D-F36017A1FF1D}|Assembly-CSharp.csproj|C:\\Users\\Administrator\\Desktop\\General-Class\\Photon Network Game\\assets\\scripts\\playfabmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7144CB18-C2DB-73D0-DD8D-F36017A1FF1D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playfabmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7144CB18-C2DB-73D0-DD8D-F36017A1FF1D}|Assembly-CSharp.csproj|C:\\Users\\Administrator\\Desktop\\General-Class\\Photon Network Game\\assets\\scripts\\charactermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7144CB18-C2DB-73D0-DD8D-F36017A1FF1D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\charactermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7144CB18-C2DB-73D0-DD8D-F36017A1FF1D}|Assembly-CSharp.csproj|C:\\Users\\Administrator\\Desktop\\General-Class\\Photon Network Game\\assets\\scripts\\information.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7144CB18-C2DB-73D0-DD8D-F36017A1FF1D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\information.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A4D8D566-DB05-206D-93BD-EAC132E703AF}|PhotonUnityNetworking.csproj|C:\\Users\\Administrator\\Desktop\\General-Class\\Photon Network Game\\assets\\photon\\photonunitynetworking\\code\\photonview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -94,7 +94,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Bookmark",
@@ -115,18 +115,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "GraphicToggleIsOnTransition.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\General-Class\\Photon Network Game\\Assets\\Photon\\PhotonUnityNetworking\\UtilityScripts\\UI\\GraphicToggleIsOnTransition.cs",
-              "RelativeDocumentMoniker": "Assets\\Photon\\PhotonUnityNetworking\\UtilityScripts\\UI\\GraphicToggleIsOnTransition.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\General-Class\\Photon Network Game\\Assets\\Photon\\PhotonUnityNetworking\\UtilityScripts\\UI\\GraphicToggleIsOnTransition.cs",
-              "RelativeToolTip": "Assets\\Photon\\PhotonUnityNetworking\\UtilityScripts\\UI\\GraphicToggleIsOnTransition.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-19T09:34:30.07Z"
             },
             {
               "$type": "Document",
@@ -154,7 +142,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Information.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\General-Class\\Photon Network Game\\Assets\\Scripts\\Information.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Information.cs",
@@ -162,8 +150,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Information.cs",
               "ViewState": "AQIAAAgAAAAAAAAAAAAmwBMAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T09:25:23.967Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-18T09:25:23.967Z"
             },
             {
               "$type": "Document",
@@ -180,7 +167,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "PlayfabManager.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\General-Class\\Photon Network Game\\Assets\\Scripts\\PlayfabManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayfabManager.cs",
@@ -188,31 +175,42 @@
               "RelativeToolTip": "Assets\\Scripts\\PlayfabManager.cs",
               "ViewState": "AQIAABYAAAAAAAAAAAAAwBoAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-13T10:07:05.422Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-13T10:07:05.422Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Character.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\General-Class\\Photon Network Game\\Assets\\Scripts\\Character.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Character.cs",
               "ToolTip": "C:\\Users\\Administrator\\Desktop\\General-Class\\Photon Network Game\\Assets\\Scripts\\Character.cs",
               "RelativeToolTip": "Assets\\Scripts\\Character.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAAwBgAAAAAAAAA",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAowDwAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-19T09:15:49.496Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
+              "Title": "GraphicToggleIsOnTransition.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\General-Class\\Photon Network Game\\Assets\\Photon\\PhotonUnityNetworking\\UtilityScripts\\UI\\GraphicToggleIsOnTransition.cs",
+              "RelativeDocumentMoniker": "Assets\\Photon\\PhotonUnityNetworking\\UtilityScripts\\UI\\GraphicToggleIsOnTransition.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\General-Class\\Photon Network Game\\Assets\\Photon\\PhotonUnityNetworking\\UtilityScripts\\UI\\GraphicToggleIsOnTransition.cs",
+              "RelativeToolTip": "Assets\\Photon\\PhotonUnityNetworking\\UtilityScripts\\UI\\GraphicToggleIsOnTransition.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T09:34:30.07Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "CharacterManager.cs",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\General-Class\\Photon Network Game\\Assets\\Scripts\\CharacterManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CharacterManager.cs",
               "ToolTip": "C:\\Users\\Administrator\\Desktop\\General-Class\\Photon Network Game\\Assets\\Scripts\\CharacterManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\CharacterManager.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAQAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-18T10:34:16.254Z",
               "EditorCaption": ""
