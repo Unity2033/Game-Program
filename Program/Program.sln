@@ -19,6 +19,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class6th (Iteration Stateme
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class7th (Type Conversion)", "..\Class7th (Type Conversion)\Class7th (Type Conversion).vcxproj", "{ABBA11FC-9062-4A80-B082-C195F1674470}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class8th (Pointer)", "..\Class8th (Pointer)\Class8th (Pointer).vcxproj", "{BAECA08F-1B35-4D7D-9978-9FAEFB40892B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -91,6 +93,14 @@ Global
 		{ABBA11FC-9062-4A80-B082-C195F1674470}.Release|x64.Build.0 = Release|x64
 		{ABBA11FC-9062-4A80-B082-C195F1674470}.Release|x86.ActiveCfg = Release|Win32
 		{ABBA11FC-9062-4A80-B082-C195F1674470}.Release|x86.Build.0 = Release|Win32
+		{BAECA08F-1B35-4D7D-9978-9FAEFB40892B}.Debug|x64.ActiveCfg = Debug|x64
+		{BAECA08F-1B35-4D7D-9978-9FAEFB40892B}.Debug|x64.Build.0 = Debug|x64
+		{BAECA08F-1B35-4D7D-9978-9FAEFB40892B}.Debug|x86.ActiveCfg = Debug|Win32
+		{BAECA08F-1B35-4D7D-9978-9FAEFB40892B}.Debug|x86.Build.0 = Debug|Win32
+		{BAECA08F-1B35-4D7D-9978-9FAEFB40892B}.Release|x64.ActiveCfg = Release|x64
+		{BAECA08F-1B35-4D7D-9978-9FAEFB40892B}.Release|x64.Build.0 = Release|x64
+		{BAECA08F-1B35-4D7D-9978-9FAEFB40892B}.Release|x86.ActiveCfg = Release|Win32
+		{BAECA08F-1B35-4D7D-9978-9FAEFB40892B}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
