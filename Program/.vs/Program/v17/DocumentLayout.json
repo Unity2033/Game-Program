@@ -1,10 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Administrator\\Desktop\\Program\\",
+  "WorkspaceRootPath": "C:\\Users\\Administrator\\Desktop\\Game-Program\\Program\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9A36A9F1-69AF-4166-9E06-EFB6B739421A}|Program.vcxproj|C:\\Users\\Administrator\\Desktop\\Program\\Program.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{9A36A9F1-69AF-4166-9E06-EFB6B739421A}|Program.vcxproj|C:\\Users\\Administrator\\Desktop\\Game-Program\\Program\\Program.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{9A36A9F1-69AF-4166-9E06-EFB6B739421A}|Program.vcxproj|solutionrelative:Program.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5F9C775-D091-4CDE-8550-AB1004294D3F}|..\\Class1th (Time)\\Class1th (Time).vcxproj|C:\\Users\\Administrator\\Desktop\\Game-Program\\Class1th (Time)\\Source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +17,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,13 +41,26 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Source.c",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Game-Program\\Class1th (Time)\\Source.c",
+              "RelativeDocumentMoniker": "..\\Class1th (Time)\\Source.c",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Game-Program\\Class1th (Time)\\Source.c",
+              "RelativeToolTip": "..\\Class1th (Time)\\Source.c",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-08-13T10:20:42.42Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.c",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Program\\Program.c",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Game-Program\\Program\\Program.c",
               "RelativeDocumentMoniker": "Program.c",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Program\\Program.c",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Game-Program\\Program\\Program.c",
               "RelativeToolTip": "Program.c",
-              "ViewState": "AQIAABQAAAAAAAAAAAAcwCQAAAATAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2025-08-12T09:13:59.46Z",
               "EditorCaption": ""
