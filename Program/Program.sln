@@ -15,6 +15,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class4th (Position System)"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class5th (Double Buffer)", "..\Class5th (Double Buffer)\Class5th (Double Buffer).vcxproj", "{6A0DCA3B-88D9-442D-92F9-1A66E9F86C70}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class6th (Enumeration)", "..\Class6th (Enumeration)\Class6th (Enumeration).vcxproj", "{E288EF16-5F85-4416-A283-A1342FCB7AFA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -71,6 +73,14 @@ Global
 		{6A0DCA3B-88D9-442D-92F9-1A66E9F86C70}.Release|x64.Build.0 = Release|x64
 		{6A0DCA3B-88D9-442D-92F9-1A66E9F86C70}.Release|x86.ActiveCfg = Release|Win32
 		{6A0DCA3B-88D9-442D-92F9-1A66E9F86C70}.Release|x86.Build.0 = Release|Win32
+		{E288EF16-5F85-4416-A283-A1342FCB7AFA}.Debug|x64.ActiveCfg = Debug|x64
+		{E288EF16-5F85-4416-A283-A1342FCB7AFA}.Debug|x64.Build.0 = Debug|x64
+		{E288EF16-5F85-4416-A283-A1342FCB7AFA}.Debug|x86.ActiveCfg = Debug|Win32
+		{E288EF16-5F85-4416-A283-A1342FCB7AFA}.Debug|x86.Build.0 = Debug|Win32
+		{E288EF16-5F85-4416-A283-A1342FCB7AFA}.Release|x64.ActiveCfg = Release|x64
+		{E288EF16-5F85-4416-A283-A1342FCB7AFA}.Release|x64.Build.0 = Release|x64
+		{E288EF16-5F85-4416-A283-A1342FCB7AFA}.Release|x86.ActiveCfg = Release|Win32
+		{E288EF16-5F85-4416-A283-A1342FCB7AFA}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
