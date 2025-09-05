@@ -3,26 +3,26 @@
   "WorkspaceRootPath": "C:\\Users\\Administrator\\Desktop\\Game-Program\\Program\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9A36A9F1-69AF-4166-9E06-EFB6B739421A}|Program.vcxproj|C:\\Users\\Administrator\\Desktop\\Game-Program\\Program\\Program.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{9A36A9F1-69AF-4166-9E06-EFB6B739421A}|Program.vcxproj|solutionrelative:Program.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{46649DFC-1D68-4B51-BDD8-8FF5ADE7672B}|Program.vcxproj|C:\\Users\\Administrator\\Desktop\\Game-Program\\Program\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{46649DFC-1D68-4B51-BDD8-8FF5ADE7672B}|Program.vcxproj|solutionrelative:Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E288EF16-5F85-4416-A283-A1342FCB7AFA}|..\\Class6th (Enumeration)\\Class6th (Enumeration).vcxproj|C:\\Users\\Administrator\\Desktop\\Game-Program\\Class6th (Enumeration)\\Source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Administrator\\Desktop\\SFML-3.0.0\\include\\SFML\\Graphics\\Rect.inl||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6A0DCA3B-88D9-442D-92F9-1A66E9F86C70}|..\\Class5th (Double Buffer)\\Class5th (Double Buffer).vcxproj|C:\\Users\\Administrator\\Desktop\\Game-Program\\Class5th (Double Buffer)\\Source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Administrator\\Desktop\\SFML-3.0.0\\include\\SFML\\Graphics\\Texture.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DD27D032-E7DD-42B6-AF30-6C1FFD17042F}|..\\Class4th (Position System)\\Class4th (Position System).vcxproj|C:\\Users\\Administrator\\Desktop\\Game-Program\\Class4th (Position System)\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Administrator\\Desktop\\SFML-3.0.0\\include\\SFML\\System\\Exception.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{95C6F75C-090D-417C-A22B-4249AF3E9215}|..\\Class3th (Input System)\\Class3th (Input System).vcxproj|C:\\Users\\Administrator\\Desktop\\Game-Program\\Class3th (Input System)\\Source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Administrator\\Desktop\\SFML-3.0.0\\include\\SFML\\Window\\WindowBase.inl||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3CC0B8EB-1F80-4FFC-A28A-70D52E5D327B}|..\\Class2th (File Input \u0026 Output)\\Class2th (File Input \u0026 Output).vcxproj|C:\\Users\\Administrator\\Desktop\\Game-Program\\Class2th (File Input \u0026 Output)\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Administrator\\Desktop\\SFML-3.0.0\\include\\SFML\\Graphics\\Shape.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B5F9C775-D091-4CDE-8550-AB1004294D3F}|..\\Class1th (Time)\\Class1th (Time).vcxproj|C:\\Users\\Administrator\\Desktop\\Game-Program\\Class1th (Time)\\Source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\include\\array||{3B902123-F8A7-4915-9F01-361F908088D0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -56,89 +56,87 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Source.c",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Game-Program\\Class6th (Enumeration)\\Source.c",
-              "RelativeDocumentMoniker": "..\\Class6th (Enumeration)\\Source.c",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Game-Program\\Class6th (Enumeration)\\Source.c",
-              "RelativeToolTip": "..\\Class6th (Enumeration)\\Source.c",
-              "ViewState": "AQIAADwAAAAAAAAAAAAowEEAAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-08-22T10:38:32.524Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Source.c",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Game-Program\\Class5th (Double Buffer)\\Source.c",
-              "RelativeDocumentMoniker": "..\\Class5th (Double Buffer)\\Source.c",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Game-Program\\Class5th (Double Buffer)\\Source.c",
-              "RelativeToolTip": "..\\Class5th (Double Buffer)\\Source.c",
-              "ViewState": "AQIAAE4AAAAAAAAAAAAAAGEAAAADAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-08-21T10:38:55.599Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Source.cpp",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Game-Program\\Class4th (Position System)\\Source.cpp",
-              "RelativeDocumentMoniker": "..\\Class4th (Position System)\\Source.cpp",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Game-Program\\Class4th (Position System)\\Source.cpp",
-              "RelativeToolTip": "..\\Class4th (Position System)\\Source.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACkAAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-08-21T09:07:38.538Z"
+              "Title": "Exception.hpp",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\SFML-3.0.0\\include\\SFML\\System\\Exception.hpp",
+              "RelativeDocumentMoniker": "..\\..\\SFML-3.0.0\\include\\SFML\\System\\Exception.hpp",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\SFML-3.0.0\\include\\SFML\\System\\Exception.hpp",
+              "RelativeToolTip": "..\\..\\SFML-3.0.0\\include\\SFML\\System\\Exception.hpp",
+              "ViewState": "AQIAABwAAAAAAAAAAIA0wC0AAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-08-25T10:19:17.678Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Source.c",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Game-Program\\Class3th (Input System)\\Source.c",
-              "RelativeDocumentMoniker": "..\\Class3th (Input System)\\Source.c",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Game-Program\\Class3th (Input System)\\Source.c",
-              "RelativeToolTip": "..\\Class3th (Input System)\\Source.c",
-              "ViewState": "AQIAACEAAAAAAAAAAADwvycAAAADAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-08-19T09:44:31.688Z"
+              "Title": "WindowBase.inl",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\SFML-3.0.0\\include\\SFML\\Window\\WindowBase.inl",
+              "RelativeDocumentMoniker": "..\\..\\SFML-3.0.0\\include\\SFML\\Window\\WindowBase.inl",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\SFML-3.0.0\\include\\SFML\\Window\\WindowBase.inl",
+              "RelativeToolTip": "..\\..\\SFML-3.0.0\\include\\SFML\\Window\\WindowBase.inl",
+              "ViewState": "AQIAACIAAAAAAAAAAAA0wC4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-08-25T10:18:00.642Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Source.cpp",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Game-Program\\Class2th (File Input \u0026 Output)\\Source.cpp",
-              "RelativeDocumentMoniker": "..\\Class2th (File Input \u0026 Output)\\Source.cpp",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Game-Program\\Class2th (File Input \u0026 Output)\\Source.cpp",
-              "RelativeToolTip": "..\\Class2th (File Input \u0026 Output)\\Source.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADYAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-08-18T09:41:17.063Z"
+              "Title": "Shape.hpp",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\SFML-3.0.0\\include\\SFML\\Graphics\\Shape.hpp",
+              "RelativeDocumentMoniker": "..\\..\\SFML-3.0.0\\include\\SFML\\Graphics\\Shape.hpp",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\SFML-3.0.0\\include\\SFML\\Graphics\\Shape.hpp",
+              "RelativeToolTip": "..\\..\\SFML-3.0.0\\include\\SFML\\Graphics\\Shape.hpp",
+              "ViewState": "AQIAALoAAAAAAAAAAIA0wMYAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-08-25T10:17:59.553Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "Source.c",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Game-Program\\Class1th (Time)\\Source.c",
-              "RelativeDocumentMoniker": "..\\Class1th (Time)\\Source.c",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Game-Program\\Class1th (Time)\\Source.c",
-              "RelativeToolTip": "..\\Class1th (Time)\\Source.c",
-              "ViewState": "AQIAAB4AAAAAAAAAAIAzwB0AAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-08-14T09:44:56.898Z"
+              "Title": "array",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\include\\array",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\include\\array",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\include\\array",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\include\\array",
+              "ViewState": "AQIAANcAAAAAAAAAAAA0wOMAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-08-25T10:17:58.7Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Rect.inl",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\SFML-3.0.0\\include\\SFML\\Graphics\\Rect.inl",
+              "RelativeDocumentMoniker": "..\\..\\SFML-3.0.0\\include\\SFML\\Graphics\\Rect.inl",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\SFML-3.0.0\\include\\SFML\\Graphics\\Rect.inl",
+              "RelativeToolTip": "..\\..\\SFML-3.0.0\\include\\SFML\\Graphics\\Rect.inl",
+              "ViewState": "AQIAADoAAAAAAAAAAIA0wEYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-08-25T10:16:39.185Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Texture.hpp",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\SFML-3.0.0\\include\\SFML\\Graphics\\Texture.hpp",
+              "RelativeDocumentMoniker": "..\\..\\SFML-3.0.0\\include\\SFML\\Graphics\\Texture.hpp",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\SFML-3.0.0\\include\\SFML\\Graphics\\Texture.hpp",
+              "RelativeToolTip": "..\\..\\SFML-3.0.0\\include\\SFML\\Graphics\\Texture.hpp",
+              "ViewState": "AQIAAHwAAAAAAAAAAIA0wIgAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-08-25T10:16:35.537Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.c",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Game-Program\\Program\\Program.c",
-              "RelativeDocumentMoniker": "Program.c",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Game-Program\\Program\\Program.c",
-              "RelativeToolTip": "Program.c",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-08-12T09:13:59.46Z",
+              "Title": "Source.cpp",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Game-Program\\Program\\Source.cpp",
+              "RelativeDocumentMoniker": "Source.cpp",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Game-Program\\Program\\Source.cpp",
+              "RelativeToolTip": "Source.cpp",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAxwAsAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-08-25T09:46:27.738Z",
               "EditorCaption": ""
             }
           ]

@@ -1,0 +1,13 @@
+﻿  Source.cpp
+C:\Users\Administrator\Desktop\SFML-3.0.0\include\SFML\System\Exception.hpp(41,47): warning C4275: DLL 인터페이스가 아닌 class 'std::runtime_error'이(가) DLL 인터페이스 class 'sf::Exception'의 기본으로 사용되었습니다.
+  (소스 파일 'Source.cpp'을(를) 컴파일하는 중)
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\stdexcept(100,19):
+  'std::runtime_error' 선언을 참조하십시오.
+  C:\Users\Administrator\Desktop\SFML-3.0.0\include\SFML\System\Exception.hpp(41,23):
+  'sf::Exception' 선언을 참조하십시오.
+  
+  코드를 생성하고 있습니다.
+  Previous IPDB not found, fall back to full compilation.
+  All 16 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  코드를 생성했습니다.
+  Program.vcxproj -> C:\Users\Administrator\Desktop\Game-Program\Program\Release\Program.exe

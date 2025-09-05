@@ -1,5 +1,0 @@
-Strength : 
-Dexterity : 
-Wisdom : 
-Intelligence : 
-Constitution :   
