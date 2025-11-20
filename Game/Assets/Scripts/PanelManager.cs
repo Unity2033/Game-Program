@@ -47,5 +47,11 @@ public class PanelManager : MonoBehaviour
 
             clone.SetActive(true);
         }
+
+
+        if (clone.GetComponent<ErrorPanel>() == true)
+        {
+            clone.GetComponent<ErrorPanel>().SetText(message);
+        }
     }
 }
