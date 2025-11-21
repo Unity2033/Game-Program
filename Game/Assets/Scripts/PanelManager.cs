@@ -4,7 +4,8 @@ using UnityEngine;
 public enum Panel
 {
     Error,
-    Subscribe
+    Subscribe,
+    Generator
 }
 
 public class PanelManager : MonoBehaviour
