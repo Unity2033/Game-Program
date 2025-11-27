@@ -185,6 +185,7 @@ GameObject:
   - component: {fileID: 7218622853599178360}
   - component: {fileID: 3920189167390328200}
   - component: {fileID: 184763068697669807}
+  - component: {fileID: 4224008001395389350}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -282,6 +283,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f172facc25001524e910bdf748a038c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rotation: {fileID: 4224008001395389350}
   remoteCamera: {fileID: 5601966040405957950}
   characterController: {fileID: 0}
   speed: 5
@@ -311,6 +313,20 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0.135, z: -0.0075}
+--- !u!114 &4224008001395389350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 696344769976199019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f8f9146d76819547b0c02dad282b8a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  axis: 0
+  speed: 250
 --- !u!1 &1145571753061681403
 GameObject:
   m_ObjectHideFlags: 0
@@ -1613,6 +1629,8 @@ GameObject:
   - component: {fileID: 5601966040405957950}
   - component: {fileID: 4478352453470771043}
   - component: {fileID: 9002216611646125534}
+  - component: {fileID: 4567278989366748912}
+  - component: {fileID: 5883176678403516146}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -1738,6 +1756,35 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!114 &4567278989366748912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7817530177791357350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89f2f5ce0d3c8954586bac78c77017f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotation: {fileID: 5883176678403516146}
+  minimumAngle: -65
+  maximumAngle: 65
+--- !u!114 &5883176678403516146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7817530177791357350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f8f9146d76819547b0c02dad282b8a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  axis: 0
+  speed: 2
 --- !u!1 &7896848709410173285
 GameObject:
   m_ObjectHideFlags: 0
