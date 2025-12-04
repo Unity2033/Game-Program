@@ -4,6 +4,8 @@ using Photon.Realtime;
 
 public class GameManager : MonoBehaviourPunCallbacks
 {
+
+
     public override void OnPlayerEnteredRoom(Player newPlayer)
     {
         if(PhotonNetwork.CurrentRoom.PlayerCount >= PhotonNetwork.CurrentRoom.MaxPlayers)
