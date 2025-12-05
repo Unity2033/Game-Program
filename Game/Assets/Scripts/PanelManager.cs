@@ -42,6 +42,8 @@ public class PanelManager : MonoBehaviour
             clone.name = clone.name.Replace("(Clone)", "");
 
             dictionary.Add(panel, clone);
+
+            DontDestroyOnLoad(clone);
         }
         else
         {

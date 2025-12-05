@@ -3,21 +3,19 @@ using Photon.Pun;
 using Photon.Realtime;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using Unity.VisualScripting;
 
 public class CreateRoom : MonoBehaviourPunCallbacks
 {
     [SerializeField] InputField titleInputField;
 
-    [SerializeField] Button[] buttons;
+    [SerializeField] Toggle [ ] toggles; 
 
     [SerializeField] int personnal = 0;
 
     private void Start()
     {
-        EventSystem.current.SetSelectedGameObject(null);
-        EventSystem.current.SetSelectedGameObject(buttons[0].gameObject);
-
-        buttons[0].onClick.Invoke();
+        Select(true);
     }
 
     public void OnCreateRoom()
@@ -31,11 +29,26 @@ public class CreateRoom : MonoBehaviourPunCallbacks
         roomOptions.IsVisible = true;
 
         PhotonNetwork.CreateRoom(titleInputField.text, roomOptions);
+
+        gameObject.SetActive(false);
     }
 
-    public void Select(int count)
+    public void Select(bool power)
     {
-        personnal = count;
+        if(power == false) { return; }
+
+        if (toggles[0].isOn)
+        {
+            personnal = 2;
+        }
+        else if(toggles[1].isOn)
+        {
+            personnal = 3;
+        }
+        else if (toggles[2].isOn)
+        {
+            personnal = 4;
+        }
     }
 
     public void Cancle()

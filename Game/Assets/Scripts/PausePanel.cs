@@ -17,6 +17,8 @@ public class PausePanel : MonoBehaviourPunCallbacks
 
     public override void OnLeftRoom()
     {
+        gameObject.SetActive(false);
+
         PhotonNetwork.LoadLevel("Lobby");
     }
 }

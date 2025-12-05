@@ -26,8 +26,6 @@ public class MasterManager : MonoBehaviourPunCallbacks
     public override void OnMasterClientSwitched(Player newMasterClient)
     {
         PhotonNetwork.SetMasterClient(PhotonNetwork.PlayerList[0]);
-
-        Debug.Log(PhotonNetwork.PlayerList[0]);
     }
 
 
