@@ -4,15 +4,16 @@ using UnityEngine;
 public class CreateManager : MonoBehaviour
 {
     [SerializeField] float radius;
-    [SerializeField] GameObject minotaur;
+    [SerializeField] float duration;
     [SerializeField] WaitForSeconds waitForSeconds;
 
     private void Awake()
     {
-        waitForSeconds = new WaitForSeconds(5.0f);
+        waitForSeconds = new WaitForSeconds(duration);
+
     }
 
-    void Start()
+    private void Start()
     {
         StartCoroutine(Create());
     }
@@ -20,14 +21,14 @@ public class CreateManager : MonoBehaviour
     IEnumerator Create()
     {
         while(true)
-        {
-            GameObject clone = Instantiate(minotaur);
+        {       
+            yield return waitForSeconds;
+
+            GameObject clone = ObjectPool.Instance.GetObject();
 
             Vector2 direction = Random.insideUnitCircle.normalized * radius;
 
             clone.transform.position = new Vector3(direction.x, 0, direction.y);
-
-            yield return waitForSeconds;
         }
     }
 

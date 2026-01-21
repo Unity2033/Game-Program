@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Minotaur : MonoBehaviour
@@ -6,7 +7,7 @@ public class Minotaur : MonoBehaviour
     [SerializeField] Vector3 direction;
     [SerializeField] Transform portalTransform;
 
-    private void Start()
+    private void OnEnable()
     {
         portalTransform = GameObject.Find("Portal").transform;
 
@@ -24,7 +25,7 @@ public class Minotaur : MonoBehaviour
     {
         if(other.CompareTag("Portal"))
         {
-            Destroy(gameObject);
+            ObjectPool.Instance.Return(gameObject);
         }
     }
 }
