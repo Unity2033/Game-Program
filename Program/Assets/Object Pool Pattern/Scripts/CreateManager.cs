@@ -10,7 +10,6 @@ public class CreateManager : MonoBehaviour
     private void Awake()
     {
         waitForSeconds = new WaitForSeconds(duration);
-
     }
 
     private void Start()
@@ -21,14 +20,16 @@ public class CreateManager : MonoBehaviour
     IEnumerator Create()
     {
         while(true)
-        {       
-            yield return waitForSeconds;
-
+        {
             GameObject clone = ObjectPool.Instance.GetObject();
 
             Vector2 direction = Random.insideUnitCircle.normalized * radius;
 
             clone.transform.position = new Vector3(direction.x, 0, direction.y);
+
+            clone.SetActive(true);
+
+            yield return waitForSeconds;
         }
     }
 

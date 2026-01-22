@@ -1,26 +1,16 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ObjectPool : MonoBehaviour
+public class ObjectPool : Singleton<ObjectPool>
 {
     [SerializeField] int createCount;
-
-    [SerializeField] static ObjectPool instance;
-
-    public static ObjectPool Instance { get { return instance; } }
 
     [SerializeField] Queue<GameObject> queue = new Queue<GameObject>();
 
     private void Awake()
     {
-        if(instance == null)
-        {
-            instance = this;
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
+        createCount = 5;
     }
 
     private void Start()
@@ -57,9 +47,9 @@ public class ObjectPool : MonoBehaviour
             clone = queue.Dequeue();
 
             clone.transform.SetParent(transform);
-        }
 
-        clone.SetActive(true);
+            clone.SetActive(false);
+        }
 
         return clone;
     }
@@ -70,5 +60,4 @@ public class ObjectPool : MonoBehaviour
 
         queue.Enqueue(clone);
     }
- 
 }
