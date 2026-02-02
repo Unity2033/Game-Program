@@ -5,62 +5,39 @@ public class Minotauros : MonoBehaviour
 {
     private Coroutine coroutine;
 
+    [SerializeField] string [ ] patternName;
+
     [SerializeField] Animator animator;
     [SerializeField] AnimatorStateInfo animatorStateInfo;
 
     private void Awake()
     {
         animator = GetComponent<Animator>();
-
-        animatorStateInfo = animator.GetCurrentAnimatorStateInfo(0);
-
-        AnimatorClipInfo[] clipInfos =  animator.GetCurrentAnimatorClipInfo(0);
-
-        for(int i = 0; i < clipInfos.Length; i++)
-        {
-            Debug.Log(clipInfos[i].clip.name);
-        }
     }
 
     private void Start()
     {
-        coroutine = StartCoroutine(Smash()); 
+        StartCoroutine(Coroutine());
     }
 
-    private void Update()
+    IEnumerator Coroutine()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        while(true)
         {
-            if(coroutine != null)
+            yield return CoroutineCache.GetCachedWait(5.0f);
+
+            if (coroutine != null)
             {
                 StopCoroutine(coroutine);
             }
 
-            coroutine = StartCoroutine(Paranoia());
+            coroutine = StartCoroutine(Pattern(patternName[Random.Range(0,patternName.Length)]));
         }
     }
 
-    private IEnumerator Smash()
+    private IEnumerator Pattern(string name)
     {
-        animator.SetTrigger("Smash");
-
-        AnimatorClipInfo[] animatorClipInfo = animator.GetCurrentAnimatorClipInfo(0);
-
-        yield return CoroutineCache.GetCachedWait(animatorClipInfo[0].clip.length);
-    }
-
-    private IEnumerator Damnation()
-    {
-        animator.SetTrigger("Damnation");
-
-        AnimatorClipInfo[] animatorClipInfo = animator.GetCurrentAnimatorClipInfo(0);
-
-        yield return CoroutineCache.GetCachedWait(animatorClipInfo[0].clip.length);
-    }
-
-    private IEnumerator Paranoia()
-    {
-        animator.SetTrigger("Paranoia");
+        animator.SetTrigger(name);
 
         AnimatorClipInfo[] animatorClipInfo = animator.GetCurrentAnimatorClipInfo(0);
 
