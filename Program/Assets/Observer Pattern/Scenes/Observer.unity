@@ -159,6 +159,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa2f9697a63c291488e63822e39f0f83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sprite: {fileID: 21300000, guid: 1a22abc46d79151419d0aa8f4e296033, type: 3}
+  canvas: {fileID: 0}
+  questImage: {fileID: 0}
 --- !u!1 &107026663 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6792327054025522797, guid: 64db8d48fab1ceb43a8ee5d52643029a, type: 3}
@@ -199,6 +202,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa2f9697a63c291488e63822e39f0f83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sprite: {fileID: 21300000, guid: 1a22abc46d79151419d0aa8f4e296033, type: 3}
+  canvas: {fileID: 0}
+  questImage: {fileID: 0}
 --- !u!1 &154827213
 GameObject:
   m_ObjectHideFlags: 0
@@ -554,6 +560,54 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 417787380}
   m_CullTransparentMesh: 1
+--- !u!1 &452136411
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 452136413}
+  - component: {fileID: 452136412}
+  m_Layer: 0
+  m_Name: Performance Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &452136412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 452136411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11b0a498ddcf9d9449d4a06a9614bc04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questTitle:
+  - Into the Forest
+  - Collect Healing Herbs
+  - Defeat the Forest Slimes
+--- !u!4 &452136413
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 452136411}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &766238416
 GameObject:
   m_ObjectHideFlags: 0
@@ -726,6 +780,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa2f9697a63c291488e63822e39f0f83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sprite: {fileID: 21300000, guid: 1a22abc46d79151419d0aa8f4e296033, type: 3}
+  canvas: {fileID: 0}
+  questImage: {fileID: 0}
 --- !u!1 &939073100
 GameObject:
   m_ObjectHideFlags: 0
@@ -1486,3 +1543,4 @@ SceneRoots:
   - {fileID: 1687670172}
   - {fileID: 1879598097}
   - {fileID: 1356713679}
+  - {fileID: 452136413}
